@@ -67,7 +67,52 @@
     ],
     "cta_heading": "Ready to parse your first document?",
     "cta_sub": "Sign in and get 100 free credits. No credit card required.",
-    "cta_button": "Start Free — 100 Credits"
+    "cta_button": "Start Free — 100 Credits",
+    "try_free": "Try this use case free",
+    "items": [
+      {
+        "id": "pdf-parsing",
+        "badge": "Most Popular",
+        "h3": "PDF Parser & Data Extraction",
+        "description": "Extract structured data from any PDF — financial reports, research papers, scanned invoices, and more. Output as JSON, Markdown, CSV, or XML with normalized coordinates for every element. Ideal for building RAG pipelines, LLM applications, and automated document workflows.",
+        "keywords": ["pdf parsing", "extract data from pdf", "pdf to json converter", "pdf to csv", "pdf data extraction", "pdf parser"]
+      },
+      {
+        "id": "resume-parser",
+        "badge": "HR & Recruiting",
+        "h3": "AI Resume Parser & CV Extraction",
+        "description": "Automatically extract candidate information from resumes and CVs in any format — PDF, Word, or image scans. Structured output includes name, contact, skills, work experience, and education fields. Plug directly into your ATS or HR automation pipeline.",
+        "keywords": ["resume parser", "ai resume parser", "resume data extraction", "cv extraction"]
+      },
+      {
+        "id": "bank-statement-parser",
+        "badge": "Finance & Compliance",
+        "h3": "Bank Statement Parser",
+        "description": "Convert bank statements from any institution into clean, structured CSV or JSON. Automatically extract transaction dates, descriptions, debit/credit amounts, and running balances. Supports multi-page statements, foreign currency accounts, and scanned PDFs.",
+        "keywords": ["bank statement parser", "bank statement to csv"]
+      },
+      {
+        "id": "document-extraction",
+        "badge": "Enterprise",
+        "h3": "Document Extraction Software & Automation",
+        "description": "Scale document extraction across your entire organization. Batch process thousands of documents via API, trigger webhooks on completion, and integrate with your existing data pipelines. Supports Word, Excel, PowerPoint, HTML, and 50+ formats alongside PDF.",
+        "keywords": ["document extraction", "document parser", "document extraction software", "pdf document automation"]
+      },
+      {
+        "id": "handwriting-recognition",
+        "badge": "OCR & Digitization",
+        "h3": "Handwriting to Text Converter",
+        "description": "Digitize handwritten forms, notes, prescriptions, and receipts with high accuracy. Our multi-engine OCR handles mixed printed and handwritten content on the same page, supporting both English and multilingual documents.",
+        "keywords": ["handwriting to text converter", "ocr handwriting", "handwriting recognition"]
+      },
+      {
+        "id": "legal-document-extraction",
+        "badge": "Legal & Compliance",
+        "h3": "Legal Document Data Extraction",
+        "description": "Extract key clauses, parties, dates, obligations, and defined terms from contracts, NDAs, and regulatory filings. Accelerate legal review and due diligence with structured, machine-readable output ready for your LLM or contract analysis platform.",
+        "keywords": ["legal document data extraction", "contract extraction", "nda parser"]
+      }
+    ]
   },
   "header": {
     "id": "header",

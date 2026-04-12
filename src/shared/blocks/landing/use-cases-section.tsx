@@ -252,7 +252,7 @@ function KeywordBadges({ keywords }: { keywords: string[] }) {
   );
 }
 
-function UseCaseRow({ useCase, index }: { useCase: UseCase; index: number }) {
+function UseCaseRow({ useCase, index, tryFree }: { useCase: UseCase; index: number; tryFree: string }) {
   const isEven = index % 2 === 0;
   return (
     <motion.section id={useCase.id}
@@ -286,7 +286,7 @@ function UseCaseRow({ useCase, index }: { useCase: UseCase; index: number }) {
 
         <a href={`/playground?usecase=${useCase.id}`}
           className="group inline-flex w-fit items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700">
-          Try this use case free
+          {tryFree}
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>
       </div>
@@ -298,6 +298,14 @@ function UseCaseRow({ useCase, index }: { useCase: UseCase; index: number }) {
   );
 }
 
+interface UseCaseText {
+  id: string;
+  badge: string;
+  h3: string;
+  description: string;
+  keywords: string[];
+}
+
 interface UseCasesSectionProps {
   label?: string;
   heading?: string;
@@ -306,6 +314,8 @@ interface UseCasesSectionProps {
   cta_heading?: string;
   cta_sub?: string;
   cta_button?: string;
+  try_free?: string;
+  items?: UseCaseText[];
 }
 
 export function UseCasesSection({
@@ -321,7 +331,14 @@ export function UseCasesSection({
   cta_heading = 'Ready to parse your first document?',
   cta_sub = 'Sign in and get 100 free credits. No credit card required.',
   cta_button = 'Start Free — 100 Credits',
+  try_free = 'Try this use case free',
+  items,
 }: UseCasesSectionProps) {
+  // Merge translated text into the hardcoded USE_CASES (which carry icon + preview JSX)
+  const mergedCases = USE_CASES.map((uc) => {
+    const text = items?.find((t) => t.id === uc.id);
+    return text ? { ...uc, badge: text.badge, h3: text.h3, description: text.description, keywords: text.keywords } : uc;
+  });
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -358,7 +375,7 @@ export function UseCasesSection({
         </motion.div>
 
         <div>
-          {USE_CASES.map((uc, i) => <UseCaseRow key={uc.id} useCase={uc} index={i} />)}
+          {mergedCases.map((uc, i) => <UseCaseRow key={uc.id} useCase={uc} index={i} tryFree={try_free} />)}
         </div>
 
         {/* Bottom CTA */}
