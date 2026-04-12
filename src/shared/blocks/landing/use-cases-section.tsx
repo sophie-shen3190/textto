@@ -298,7 +298,30 @@ function UseCaseRow({ useCase, index }: { useCase: UseCase; index: number }) {
   );
 }
 
-export function UseCasesSection() {
+interface UseCasesSectionProps {
+  label?: string;
+  heading?: string;
+  subheading?: string;
+  industries?: Array<{ icon: string; title: string; desc: string }>;
+  cta_heading?: string;
+  cta_sub?: string;
+  cta_button?: string;
+}
+
+export function UseCasesSection({
+  label = 'Use Cases',
+  heading = 'AI Document Parser for Every Workflow, Document Data Extraction',
+  subheading = 'From extracting data from PDFs to parsing resumes and bank statements — one API handles every document type your application needs.',
+  industries = [
+    { icon: '💰', title: 'Finance & Banking', desc: 'Annual reports, 10-K filings, balance sheets' },
+    { icon: '🧾', title: 'Invoice & Receipts', desc: 'VAT invoices, purchase orders, receipts' },
+    { icon: '⚕️', title: 'Healthcare', desc: 'Medical records, lab reports, prescriptions' },
+    { icon: '⚖️', title: 'Legal & Contracts', desc: 'Agreements, NDAs, regulatory filings' },
+  ],
+  cta_heading = 'Ready to parse your first document?',
+  cta_sub = 'Sign in and get 100 free credits. No credit card required.',
+  cta_button = 'Start Free — 100 Credits',
+}: UseCasesSectionProps) {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -310,27 +333,21 @@ export function UseCasesSection() {
           {/* Left: heading */}
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue-600">
-              Use Cases
+              {label}
             </p>
             <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900"
               style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}>
-              AI Document Parser for Every Workflow, Document Data Extraction
+              {heading}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-500"
               style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              From extracting data from PDFs to parsing resumes and bank statements —
-              one API handles every document type your application needs.
+              {subheading}
             </p>
           </div>
 
           {/* Right: industry cards */}
           <div className="grid grid-cols-2 gap-3">
-            {[
-              { icon: '💰', title: 'Finance & Banking', desc: 'Annual reports, 10-K filings, balance sheets' },
-              { icon: '🧾', title: 'Invoice & Receipts', desc: 'VAT invoices, purchase orders, receipts' },
-              { icon: '⚕️', title: 'Healthcare', desc: 'Medical records, lab reports, prescriptions' },
-              { icon: '⚖️', title: 'Legal & Contracts', desc: 'Agreements, NDAs, regulatory filings' },
-            ].map(({ icon, title, desc }) => (
+            {industries.map(({ icon, title, desc }) => (
               <div key={title} className="rounded-xl border border-slate-200 bg-white p-3.5 transition-all duration-200 hover:border-blue-200 hover:shadow-sm">
                 <div className="mb-1 text-lg">{icon}</div>
                 <div className="text-xs font-semibold text-slate-800">{title}</div>
@@ -350,16 +367,16 @@ export function UseCasesSection() {
           className="mt-16 flex flex-col items-center justify-between gap-6 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 p-8 text-white sm:flex-row">
           <div>
             <p className="text-xl font-bold" style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}>
-              Ready to parse your first document?
+              {cta_heading}
             </p>
             <p className="mt-1 text-sm text-blue-100">
-              Sign in and get 100 free credits. No credit card required.
+              {cta_sub}
             </p>
           </div>
           <div className="flex flex-shrink-0 items-center gap-3">
             <a href="/playground"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-blue-700 shadow-sm transition-colors hover:bg-blue-50">
-              Start Free — 100 Credits
+              {cta_button}
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

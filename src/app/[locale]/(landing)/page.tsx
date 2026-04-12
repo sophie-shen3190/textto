@@ -21,11 +21,12 @@ export default async function LandingPage({
 
   const t = await getTranslations('landing');
   const hero = t.raw('hero') as any;
+  const useCases = t.raw('use_cases') as any;
 
   return (
     <>
       <HeroSection hero={hero} />
-      <UseCasesSection />
+      <UseCasesSection {...useCases} />
     </>
   );
 }

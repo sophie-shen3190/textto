@@ -55,6 +55,20 @@
       { "step": "04", "label": "Extract", "desc": "Structured Output" }
     ]
   },
+  "use_cases": {
+    "label": "Use Cases",
+    "heading": "AI Document Parser for Every Workflow, Document Data Extraction",
+    "subheading": "From extracting data from PDFs to parsing resumes and bank statements — one API handles every document type your application needs.",
+    "industries": [
+      { "icon": "💰", "title": "Finance & Banking",  "desc": "Annual reports, 10-K filings, balance sheets" },
+      { "icon": "🧾", "title": "Invoice & Receipts",  "desc": "VAT invoices, purchase orders, receipts" },
+      { "icon": "⚕️", "title": "Healthcare",          "desc": "Medical records, lab reports, prescriptions" },
+      { "icon": "⚖️", "title": "Legal & Contracts",   "desc": "Agreements, NDAs, regulatory filings" }
+    ],
+    "cta_heading": "Ready to parse your first document?",
+    "cta_sub": "Sign in and get 100 free credits. No credit card required.",
+    "cta_button": "Start Free — 100 Credits"
+  },
   "header": {
     "id": "header",
     "brand": {
