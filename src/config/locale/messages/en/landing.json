@@ -1,0 +1,99 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "xparse",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Playground",
+          "url": "/playground",
+          "icon": "Code2"
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Billing",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Activity",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": false,
+    "topbanner": {}
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "xparse",
+      "description": "AI-powered document parsing that converts PDFs, images, and office files into clean, LLM-ready Markdown and structured JSON — in seconds.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Product",
+          "children": [
+            {
+              "title": "Playground",
+              "url": "/playground",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": false,
+    "show_locale": false,
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
