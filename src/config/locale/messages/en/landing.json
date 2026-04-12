@@ -1,4 +1,60 @@
 {
+  "metadata": {
+    "title": "AI Document Processing & Parser | 99.99% Accuracy",
+    "description": "AI document processing and document parsing API with 99.5% accuracy. Extract structured data from PDFs, images, invoices, and contracts — output as Markdown, JSON, or XML. Built for LLM, RAG, and enterprise document data extraction workflows. Free 100 credits to start.",
+    "keywords": "AI document processing, document parsing, PDF parser, OCR, invoice extraction, contract parsing, LLM document, RAG pipeline, structured data extraction, markdown conversion"
+  },
+  "hero": {
+    "badge": "AI Document Processing & Parser",
+    "headline_highlight": "Parse Any Document",
+    "headline_rest": "LLM-Ready in Seconds",
+    "subtitle": "Get your documents ready for gen AI",
+    "stats": [
+      { "value": "99.99%", "label": "Parse Accuracy" },
+      { "value": "5s",     "label": "Per 100 PDF Pages" },
+      { "value": "1000",   "label": "Pages Per PDF Max" },
+      { "value": "100+",   "label": "File Formats" }
+    ],
+    "parse_mode": {
+      "standard": {
+        "title": "Standard Parsing",
+        "desc": "High-accuracy layout & structure recognition for PDFs and documents."
+      },
+      "vlm": {
+        "title": "VLM Parsing",
+        "desc": "Vision-Language Model (VLM) — Understands images within documents or image files and describes them in natural language."
+      }
+    },
+    "upload": {
+      "idle": "Drop your document here",
+      "dragging": "Drop to parse",
+      "uploaded": "File uploaded! Processing…",
+      "browse": "browse files",
+      "formats_hint": "PDF, Word, Excel, Image & more"
+    },
+    "free_banner": {
+      "title_before": "Free &",
+      "title_highlight": "unlimited",
+      "title_after": "— sign up to get started",
+      "desc": "Create a free account to instantly parse PDFs and images with no usage limits. Supports all formats including scanned documents and handwritten forms."
+    },
+    "cta_primary": "Start Free — Unlimited Use",
+    "cta_secondary": "Try Playground",
+    "trust_badges": [
+      "Sign in with Google or Email",
+      "Unlimited free usage",
+      "No credit card required"
+    ],
+    "samples_title": "Sample use cases",
+    "formats_section_label": "Supported Input Formats",
+    "pipeline_label": "Processing Pipeline",
+    "pipeline": [
+      { "step": "01", "label": "Parse",   "desc": "OCR + Layout Analysis" },
+      { "step": "02", "label": "Chunk",   "desc": "Semantic Segmentation" },
+      { "step": "03", "label": "Embed",   "desc": "Vector Embedding" },
+      { "step": "04", "label": "Extract", "desc": "Structured Output" }
+    ]
+  },
   "header": {
     "id": "header",
     "brand": {
