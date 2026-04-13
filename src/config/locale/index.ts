@@ -2,21 +2,19 @@ import { envConfigs } from '..';
 
 export const localeNames: any = {
   en: 'English',
-  // zh: '中文',
-  // ja: '日本語',
-  // ko: '한국어',
-  // de: 'Deutsch',
-  // fr: 'Français',
-  // es: 'Español',
-  // pt: 'Português',
-  // it: 'Italiano',
-  // nl: 'Nederlands',
-  // ru: 'Русский',
-  // ar: 'العربية',
+  ja: '日本語',
+  ko: '한국어',
+  de: 'Deutsch',
+  fr: 'Français',
+  es: 'Español',
+  pt: 'Português',
+  it: 'Italiano',
+  nl: 'Nederlands',
+  ru: 'Русский',
+  ar: 'العربية',
 };
 
-// Uncomment each locale once its landing.json is translated
-export const locales = ['en'];
+export const locales = ['en', 'ja', 'ko', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ru', 'ar'];
 
 export const defaultLocale = envConfigs.locale;
 

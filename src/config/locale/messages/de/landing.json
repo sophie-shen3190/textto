@@ -1,1 +1,214 @@
-{}
+{
+    "metadata": {
+      "title": "KI Dokumentenverarbeitung & Parser | 99,99% Präzision",
+      "description": "Intelligente Dokumentenverarbeitung & API mit 99,5% Präzision. Daten aus PDF extrahieren, Bilder & Rechnungen in JSON/XML wandeln. 100 Credits gratis!",
+      "keywords": "KI Dokumentenverarbeitung, intelligente dokumentenverarbeitung, automatisierte dokumentenverarbeitung, Daten aus PDF extrahieren, PDF in XML umwandeln, OCR, Rechnungen auslesen"
+    },
+    "hero": {
+      "badge": "KI Dokumentenverarbeitung & Parser",
+      "headline_highlight": "Jedes Dokument parsen",
+      "headline_rest": "In Sekunden LLM-bereit",
+      "subtitle": "Machen Sie Ihre Dokumente bereit für Generative KI",
+      "stats": [
+        { "value": "99,99%", "label": "Parse-Präzision" },
+        { "value": "5s", "label": "Pro 100 PDF-Seiten" },
+        { "value": "1000", "label": "Seiten pro PDF Max." },
+        { "value": "100+", "label": "Dateiformate" }
+      ],
+      "parse_mode": {
+        "standard": {
+          "title": "Standard-Parsing",
+          "desc": "Hochpräzise Layout- & Strukturerkennung für PDFs und Dokumente."
+        },
+        "vlm": {
+          "title": "VLM-Parsing",
+          "desc": "Vision-Language Model (VLM) — Versteht Bilder in Dokumenten und beschreibt sie natürlich, um präzise Daten aus Bild extrahieren zu können."
+        }
+      },
+      "upload": {
+        "idle": "Dokument hier ablegen",
+        "dragging": "Zum Parsen loslassen",
+        "uploaded": "Datei hochgeladen! Wird verarbeitet…",
+        "browse": "Dateien durchsuchen",
+        "formats_hint": "PDF, Word, Excel, Bilder & mehr"
+      },
+      "free_banner": {
+        "title_before": "Kostenlos &",
+        "title_highlight": "unbegrenzt",
+        "title_after": "— jetzt registrieren und starten",
+        "desc": "Erstellen Sie ein kostenloses Konto, um PDFs und Bilder ohne Nutzungslimits sofort zu parsen. Unterstützt alle Formate einschließlich gescannter Dokumente und handgeschriebener Formulare."
+      },
+      "cta_primary": "Kostenlos starten — Unbegrenzt",
+      "cta_secondary": "Playground testen",
+      "trust_badges": [
+        "Mit Google oder E-Mail anmelden",
+        "Unbegrenzte kostenlose Nutzung",
+        "Keine Kreditkarte erforderlich"
+      ],
+      "samples_title": "Beispiel-Anwendungsfälle",
+      "formats_section_label": "Unterstützte Eingabeformate",
+      "pipeline_label": "Verarbeitungspipeline",
+      "pipeline": [
+        { "step": "01", "label": "Parsen", "desc": "OCR + Layout-Analyse" },
+        { "step": "02", "label": "Chunking", "desc": "Semantische Segmentierung" },
+        { "step": "03", "label": "Embedding", "desc": "Vektor-Embedding" },
+        { "step": "04", "label": "Extrahieren", "desc": "Strukturierte Ausgabe" }
+      ]
+    },
+    "use_cases": {
+      "label": "Anwendungsfälle",
+      "heading": "KI Dokumentenverarbeitung für jeden Workflow",
+      "subheading": "Von Daten aus PDF extrahieren bis zum Parsen von Lebensläufen und Kontoauszügen — eine intelligente dokumentenverarbeitung API bewältigt jeden Dokumententyp.",
+      "industries": [
+        { "icon": "💰", "title": "Finanzen & Banken", "desc": "Jahresberichte, Bilanzen, 10-K-Filings" },
+        { "icon": "🧾", "title": "Rechnungen & Belege", "desc": "Umsatzsteuerrechnungen, Bestellungen, Quittungen" },
+        { "icon": "⚕️", "title": "Gesundheitswesen", "desc": "Krankenakten, Laborberichte, Rezepte" },
+        { "icon": "⚖️", "title": "Recht & Verträge", "desc": "Vereinbarungen, NDAs, behördliche Meldungen" }
+      ],
+      "cta_heading": "Bereit für Ihr erstes Dokument?",
+      "cta_sub": "Melden Sie sich an und erhalten Sie 100 kostenlose Credits. Keine Kreditkarte erforderlich.",
+      "cta_button": "Kostenlos starten — 100 Credits",
+      "try_free": "Diesen Use Case gratis testen",
+      "items": [
+        {
+          "id": "pdf-parsing",
+          "badge": "Am beliebtesten",
+          "h3": "PDF-Parser & Datenextraktion",
+          "description": "Daten aus PDF extrahieren und strukturieren — ob Finanzberichte, Forschungsarbeiten oder Rechnungen. Geben Sie alles als JSON, Markdown aus, oder lassen Sie direkt PDF in XML umwandeln. Sie können Ihre Workflows auch automatisieren und PDF in Google Sheets umwandeln. Ideal für RAG-Pipelines und LLM-Anwendungen.",
+          "keywords": ["pdf parsing deutsch", "Daten aus PDF extrahieren", "PDF in XML umwandeln", "PDF in Google Sheets umwandeln", "pdf parser"]
+        },
+        {
+          "id": "resume-parser",
+          "badge": "HR & Recruiting",
+          "h3": "KI-Lebenslauf-Parser & CV-Extraktion",
+          "description": "Extrahieren Sie automatisch Bewerberinformationen aus Lebensläufen in jedem Format — PDF, Word oder Bildscans. Die strukturierte Ausgabe umfasst Name, Kontakt, Fähigkeiten und Berufserfahrung. Direkte Integration in Ihr ATS- oder HR-System.",
+          "keywords": ["lebenslauf parser", "cv extraktion", "ki lebenslauf parser", "hr dokumentenverarbeitung"]
+        },
+        {
+          "id": "bank-statement-parser",
+          "badge": "Finanzen & Compliance",
+          "h3": "Kontoauszug-Parser",
+          "description": "Konvertieren Sie Kontoauszüge aller Banken in sauberes, strukturiertes CSV oder JSON. Extrahieren Sie automatisch Transaktionsdaten, Beschreibungen, Beträge und Salden. Unterstützt mehrseitige Auszüge und gescannte PDFs.",
+          "keywords": ["kontoauszug parser", "kontoauszug in csv umwandeln", "finanzdaten extrahieren"]
+        },
+        {
+          "id": "document-extraction",
+          "badge": "Enterprise",
+          "h3": "Dokumentenverarbeitung Software & Automatisierung",
+          "description": "Skalieren Sie Ihre automatisierte dokumentenverarbeitung über das gesamte Unternehmen hinweg. Diese digitale dokumentenverarbeitung verarbeitet Tausende von Dateien per API, löst Webhooks aus und unterstützt über 50 Formate neben PDF.",
+          "keywords": ["dokumentenverarbeitung software", "automatisierte dokumentenverarbeitung", "digitale dokumentenverarbeitung", "dokumenten automatisierung"]
+        },
+        {
+          "id": "handwriting-recognition",
+          "badge": "OCR & Digitalisierung",
+          "h3": "Handschrift-zu-Text Konverter",
+          "description": "Digitalisieren Sie handgeschriebene Formulare, Notizen und Rezepte mit höchster Genauigkeit. Unsere Multi-Engine-OCR verarbeitet gemischte gedruckte und handgeschriebene Inhalte auf derselben Seite (Englisch und mehrsprachig).",
+          "keywords": ["handschrift erkennen", "ocr handschrift", "text aus bild extrahieren"]
+        },
+        {
+          "id": "legal-document-extraction",
+          "badge": "Recht & Compliance",
+          "h3": "Datenextraktion für Rechtsdokumente",
+          "description": "Extrahieren Sie wichtige Klauseln, Parteien, Fristen und Verpflichtungen aus Verträgen und NDAs. Beschleunigen Sie rechtliche Prüfungen mit strukturierten, maschinenlesbaren Ausgaben, die sofort für Ihr LLM bereit sind.",
+          "keywords": ["verträge auslesen", "nda parser", "rechtsdokumente datenextraktion"]
+        }
+      ]
+    },
+    "header": {
+      "id": "header",
+      "brand": {
+        "title": "xparse",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "xparse",
+          "width": 100,
+          "height": 100
+        },
+        "url": "/"
+      },
+      "nav": {
+        "items": [
+          {
+            "title": "Playground",
+            "url": "/playground",
+            "icon": "Code2"
+          },
+          {
+            "title": "Preise",
+            "url": "/pricing",
+            "icon": "DollarSign"
+          }
+        ]
+      },
+      "buttons": [],
+      "user_nav": {
+        "show_name": true,
+        "show_credits": true,
+        "show_sign_out": true,
+        "items": [
+          {
+            "title": "Abrechnung",
+            "url": "/settings/billing",
+            "icon": "CreditCard"
+          },
+          {
+            "title": "Aktivität",
+            "url": "/activity",
+            "icon": "Activity"
+          }
+        ]
+      },
+      "show_sign": true,
+      "show_theme": false,
+      "show_locale": false,
+      "topbanner": {}
+    },
+    "footer": {
+      "id": "footer",
+      "brand": {
+        "title": "xparse",
+        "description": "KI-gestützte Dokumentenverarbeitung, die PDFs, Bilder und Office-Dateien in Sekunden in sauberes, LLM-bereites Markdown und strukturiertes JSON verwandelt.",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "xparse",
+          "width": 1024,
+          "height": 1024
+        },
+        "url": "/"
+      },
+      "nav": {
+        "items": [
+          {
+            "title": "Produkt",
+            "children": [
+              {
+                "title": "Playground",
+                "url": "/playground",
+                "target": "_self"
+              },
+              {
+                "title": "Preise",
+                "url": "/pricing",
+                "target": "_self"
+              }
+            ]
+          }
+        ]
+      },
+      "show_built_with": false,
+      "show_theme": false,
+      "show_locale": false,
+      "agreement": {
+        "items": [
+          {
+            "title": "Datenschutzrichtlinie",
+            "url": "/privacy-policy"
+          },
+          {
+            "title": "Nutzungsbedingungen",
+            "url": "/terms-of-service"
+          }
+        ]
+      }
+    }
+  }
