@@ -121,6 +121,7 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta name="google-site-verification" content="k2SL_l3C3wm4y_lsggsG37D01vx_WIgAym1C2PGxq5c" />
         <link rel="icon" href={envConfigs.app_favicon} />
         <link rel="alternate icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
