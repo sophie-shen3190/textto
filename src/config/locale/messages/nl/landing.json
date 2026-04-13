@@ -1,214 +1,289 @@
 {
-    "metadata": {
-      "title": "AI Documentverwerking & Document Parser | 99.99% Accuraat",
-      "description": "Intelligente documentverwerking en document parsing API. Data uit PDF extraheren (Markdown, JSON, PDF naar XML). Perfect voor LLM en RAG. Start gratis!",
-      "keywords": "AI documentverwerking, document parser, document parsing API, data uit PDF extraheren, PDF scraper, cv parser, PDF naar XML, intelligente documentverwerking"
+  "metadata": {
+    "title": "AI Documentverwerking & Document Parser | 99.99% Accuraat",
+    "description": "Intelligente documentverwerking en document parsing API. Data uit PDF extraheren (Markdown, JSON, PDF naar XML). Perfect voor LLM en RAG. Start gratis!",
+    "keywords": "AI documentverwerking, document parser, document parsing API, data uit PDF extraheren, PDF scraper, cv parser, PDF naar XML, intelligente documentverwerking"
+  },
+  "hero": {
+    "badge": "AI Documentverwerking & Parser",
+    "headline_highlight": "Parse Elk Document",
+    "headline_rest": "Direct Klaar voor LLM",
+    "subtitle": "Maak je documenten klaar voor GenAI met geautomatiseerde documentverwerking",
+    "stats": [
+      {
+        "value": "99.99%",
+        "label": "Accuratesse"
+      },
+      {
+        "value": "5s",
+        "label": "Per 100 PDF-pagina's"
+      },
+      {
+        "value": "1000",
+        "label": "Max. Pagina's per PDF"
+      },
+      {
+        "value": "100+",
+        "label": "Bestandsformaten"
+      }
+    ],
+    "parse_mode": {
+      "standard": {
+        "title": "Standaard Parsing",
+        "desc": "Zeer nauwkeurige lay-out- en structuurherkenning voor PDF's en documenten."
+      },
+      "vlm": {
+        "title": "VLM Parsing",
+        "desc": "Vision-Language Model (VLM) — Begrijpt afbeeldingen in documenten of afbeeldingsbestanden en beschrijft ze in natuurlijke taal."
+      }
     },
-    "hero": {
-      "badge": "AI Documentverwerking & Parser",
-      "headline_highlight": "Parse Elk Document",
-      "headline_rest": "Direct Klaar voor LLM",
-      "subtitle": "Maak je documenten klaar voor GenAI met geautomatiseerde documentverwerking",
-      "stats": [
-        { "value": "99.99%", "label": "Accuratesse" },
-        { "value": "5s", "label": "Per 100 PDF-pagina's" },
-        { "value": "1000", "label": "Max. Pagina's per PDF" },
-        { "value": "100+", "label": "Bestandsformaten" }
-      ],
-      "parse_mode": {
-        "standard": {
-          "title": "Standaard Parsing",
-          "desc": "Zeer nauwkeurige lay-out- en structuurherkenning voor PDF's en documenten."
-        },
-        "vlm": {
-          "title": "VLM Parsing",
-          "desc": "Vision-Language Model (VLM) — Begrijpt afbeeldingen in documenten of afbeeldingsbestanden en beschrijft ze in natuurlijke taal."
-        }
-      },
-      "upload": {
-        "idle": "Sleep je document hierheen",
-        "dragging": "Laat los om te parsen",
-        "uploaded": "Bestand geüpload! Verwerken…",
-        "browse": "blader door bestanden",
-        "formats_hint": "PDF, Word, Excel, Afbeelding & meer"
-      },
-      "free_banner": {
-        "title_before": "Gratis &",
-        "title_highlight": "onbeperkt",
-        "title_after": "— meld je aan om te beginnen",
-        "desc": "Maak een gratis account voor de beste document parser. Parse direct PDF's zonder limieten. Ondersteunt alle formaten, inclusief gescande documenten."
-      },
-      "cta_primary": "Probeer Document Parser Gratis",
-      "cta_secondary": "Probeer Playground",
-      "trust_badges": [
-        "Log in met Google of E-mail",
-        "Onbeperkt gratis gebruik",
-        "Geen creditcard nodig"
-      ],
-      "samples_title": "Voorbeeld use cases",
-      "formats_section_label": "Ondersteunde Input Formaten",
-      "pipeline_label": "Verwerkingsproces",
-      "pipeline": [
-        { "step": "01", "label": "Parse", "desc": "OCR + Lay-out Analyse" },
-        { "step": "02", "label": "Chunk", "desc": "Semantische Segmentatie" },
-        { "step": "03", "label": "Embed", "desc": "Vector Embedding" },
-        { "step": "04", "label": "Extract", "desc": "Gestructureerde Output" }
-      ]
+    "upload": {
+      "idle": "Sleep je document hierheen",
+      "dragging": "Laat los om te parsen",
+      "uploaded": "Bestand geüpload! Verwerken…",
+      "browse": "blader door bestanden",
+      "formats_hint": "PDF, Word, Excel, Afbeelding & meer"
     },
-    "use_cases": {
-      "label": "Use Cases",
-      "heading": "Document Parser voor Elke Workflow, Elektronische Documentverwerking",
-      "subheading": "Van data uit PDF extraheren tot cv's en bankafschriften parsen — één intelligente document parsing API verwerkt elk bestandstype voor jouw applicatie.",
-      "industries": [
-        { "icon": "💰", "title": "Financiën & Bankwezen", "desc": "Jaarverslagen, balansen, financiële deponeringen" },
-        { "icon": "🧾", "title": "Facturen & Bonnetjes", "desc": "Btw-facturen, inkooporders, kwitanties" },
-        { "icon": "⚕️", "title": "Gezondheidszorg", "desc": "Medische dossiers, labrapporten, recepten" },
-        { "icon": "⚖️", "title": "Juridisch & Contracten", "desc": "Overeenkomsten, NDA's, wettelijke documenten" }
-      ],
-      "cta_heading": "Klaar om je eerste document te parsen?",
-      "cta_sub": "Log in en ontvang 100 gratis credits. Geen creditcard vereist.",
-      "cta_button": "Start Gratis Document parsing API",
-      "try_free": "Probeer deze use case gratis",
-      "items": [
-        {
-          "id": "pdf-parsing",
-          "badge": "Meest Populair",
-          "h3": "PDF Parser & Data Extractie",
-          "description": "Onze PDF scraper helpt je moeiteloos data uit PDF extraheren — financiële rapporten, facturen en meer. Output als JSON, Markdown, CSV, of PDF naar XML met genormaliseerde coördinaten. Ideaal voor RAG pipelines en geautomatiseerde workflows.",
-          "keywords": ["pdf parsing", "data uit pdf extraheren", "pdf naar json converter", "pdf naar csv", "pdf data extractie", "pdf parser", "pdf scraper", "pdf naar xml"]
-        },
-        {
-          "id": "resume-parser",
-          "badge": "HR & Recruitment",
-          "h3": "AI cv parser & Extractie",
-          "description": "Automatisch kandidaatgegevens uit cv's halen in elk formaat (PDF, Word of afbeeldingen) met onze krachtige cv parser. Gestructureerde output omvat naam, contactgegevens, vaardigheden, werkervaring en opleiding. Koppel direct aan je ATS.",
-          "keywords": ["cv parser", "ai cv parser", "cv data extractie", "resume parser"]
-        },
-        {
-          "id": "bank-statement-parser",
-          "badge": "Financiën & Compliance",
-          "h3": "Bankafschrift Parser",
-          "description": "Zet bankafschriften van elke instelling om in schone, gestructureerde CSV of JSON. Automatische extractie van transactiedatums, omschrijvingen, debet/credit en saldi. Ondersteunt documentverwerking van meerdere pagina's en gescande PDF's.",
-          "keywords": ["bankafschrift parser", "bankafschrift naar csv"]
-        },
-        {
-          "id": "document-extraction",
-          "badge": "Enterprise",
-          "h3": "Software voor Geautomatiseerde Documentverwerking",
-          "description": "Schaal data-extractie in je hele organisatie. Verwerk duizenden documenten via onze API, activeer webhooks en integreer met bestaande data pipelines. Ondersteunt 50+ formaten naast PDF voor intelligente documentverwerking.",
-          "keywords": ["document extractie", "document parser", "geautomatiseerde documentverwerking", "pdf automatisering", "intelligente documentverwerking"]
-        },
-        {
-          "id": "handwriting-recognition",
-          "badge": "OCR & Digitalisering",
-          "h3": "Handschrift naar Tekst Converter",
-          "description": "Digitaliseer handgeschreven formulieren, notities en recepten met hoge precisie. Onze multi-engine OCR verwerkt naadloos gemengde gedrukte en handgeschreven inhoud op dezelfde pagina, in meerdere talen.",
-          "keywords": ["handschrift naar tekst converter", "ocr handschrift", "handschriftherkenning"]
-        },
-        {
-          "id": "legal-document-extraction",
-          "badge": "Juridisch & Compliance",
-          "h3": "Juridische Data Extractie",
-          "description": "Haal belangrijke clausules, partijen, datums en verplichtingen uit contracten en wettelijke deponeringen. Versnel juridische controles met gestructureerde output, klaar voor je LLM of contractanalyseplatform.",
-          "keywords": ["juridische data extractie", "contract extractie", "nda parser"]
-        }
-      ]
+    "free_banner": {
+      "title_before": "Gratis &",
+      "title_highlight": "onbeperkt",
+      "title_after": "— meld je aan om te beginnen",
+      "desc": "Maak een gratis account voor de beste document parser. Parse direct PDF's zonder limieten. Ondersteunt alle formaten, inclusief gescande documenten."
     },
-    "header": {
-      "id": "header",
-      "brand": {
-        "title": "xparse",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 100,
-          "height": 100
-        },
-        "url": "/"
+    "cta_primary": "Probeer Document Parser Gratis",
+    "cta_secondary": "Probeer Playground",
+    "trust_badges": [
+      "Log in met Google of E-mail",
+      "Onbeperkt gratis gebruik",
+      "Geen creditcard nodig"
+    ],
+    "samples_title": "Voorbeeld use cases",
+    "formats_section_label": "Ondersteunde Input Formaten",
+    "pipeline_label": "Verwerkingsproces",
+    "pipeline": [
+      {
+        "step": "01",
+        "label": "Parse",
+        "desc": "OCR + Lay-out Analyse"
       },
-      "nav": {
-        "items": [
-          {
-            "title": "Playground",
-            "url": "/playground",
-            "icon": "Code2"
-          },
-          {
-            "title": "Prijzen",
-            "url": "/pricing",
-            "icon": "DollarSign"
-          }
+      {
+        "step": "02",
+        "label": "Chunk",
+        "desc": "Semantische Segmentatie"
+      },
+      {
+        "step": "03",
+        "label": "Embed",
+        "desc": "Vector Embedding"
+      },
+      {
+        "step": "04",
+        "label": "Extract",
+        "desc": "Gestructureerde Output"
+      }
+    ]
+  },
+  "use_cases": {
+    "label": "Use Cases",
+    "heading": "Document Parser voor Elke Workflow, Elektronische Documentverwerking",
+    "subheading": "Van data uit PDF extraheren tot cv's en bankafschriften parsen — één intelligente document parsing API verwerkt elk bestandstype voor jouw applicatie.",
+    "industries": [
+      {
+        "icon": "💰",
+        "title": "Financiën & Bankwezen",
+        "desc": "Jaarverslagen, balansen, financiële deponeringen"
+      },
+      {
+        "icon": "🧾",
+        "title": "Facturen & Bonnetjes",
+        "desc": "Btw-facturen, inkooporders, kwitanties"
+      },
+      {
+        "icon": "⚕️",
+        "title": "Gezondheidszorg",
+        "desc": "Medische dossiers, labrapporten, recepten"
+      },
+      {
+        "icon": "⚖️",
+        "title": "Juridisch & Contracten",
+        "desc": "Overeenkomsten, NDA's, wettelijke documenten"
+      }
+    ],
+    "cta_heading": "Klaar om je eerste document te parsen?",
+    "cta_sub": "Log in en ontvang 100 gratis credits. Geen creditcard vereist.",
+    "cta_button": "Start Gratis Document parsing API",
+    "try_free": "Probeer deze use case gratis",
+    "items": [
+      {
+        "id": "pdf-parsing",
+        "badge": "Meest Populair",
+        "h3": "PDF Parser & Data Extractie",
+        "description": "Onze PDF scraper helpt je moeiteloos data uit PDF extraheren — financiële rapporten, facturen en meer. Output als JSON, Markdown, CSV, of PDF naar XML met genormaliseerde coördinaten. Ideaal voor RAG pipelines en geautomatiseerde workflows.",
+        "keywords": [
+          "pdf parsing",
+          "data uit pdf extraheren",
+          "pdf naar json converter",
+          "pdf naar csv",
+          "pdf data extractie",
+          "pdf parser",
+          "pdf scraper",
+          "pdf naar xml"
         ]
       },
-      "buttons": [],
-      "user_nav": {
-        "show_name": true,
-        "show_credits": true,
-        "show_sign_out": true,
-        "items": [
-          {
-            "title": "Facturering",
-            "url": "/settings/billing",
-            "icon": "CreditCard"
-          },
-          {
-            "title": "Activiteit",
-            "url": "/activity",
-            "icon": "Activity"
-          }
+      {
+        "id": "resume-parser",
+        "badge": "HR & Recruitment",
+        "h3": "AI cv parser & Extractie",
+        "description": "Automatisch kandidaatgegevens uit cv's halen in elk formaat (PDF, Word of afbeeldingen) met onze krachtige cv parser. Gestructureerde output omvat naam, contactgegevens, vaardigheden, werkervaring en opleiding. Koppel direct aan je ATS.",
+        "keywords": [
+          "cv parser",
+          "ai cv parser",
+          "cv data extractie",
+          "resume parser"
         ]
       },
-      "show_sign": true,
-      "show_theme": false,
-      "show_locale": false,
-      "topbanner": {}
-    },
-    "footer": {
-      "id": "footer",
-      "brand": {
-        "title": "xparse",
-        "description": "AI-gedreven documentverwerking die PDF's, afbeeldingen en bestanden in seconden omzet in schone, LLM-klare Markdown en gestructureerde JSON.",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 1024,
-          "height": 1024
-        },
-        "url": "/"
-      },
-      "nav": {
-        "items": [
-          {
-            "title": "Product",
-            "children": [
-              {
-                "title": "Playground",
-                "url": "/playground",
-                "target": "_self"
-              },
-              {
-                "title": "Prijzen",
-                "url": "/pricing",
-                "target": "_self"
-              }
-            ]
-          }
+      {
+        "id": "bank-statement-parser",
+        "badge": "Financiën & Compliance",
+        "h3": "Bankafschrift Parser",
+        "description": "Zet bankafschriften van elke instelling om in schone, gestructureerde CSV of JSON. Automatische extractie van transactiedatums, omschrijvingen, debet/credit en saldi. Ondersteunt documentverwerking van meerdere pagina's en gescande PDF's.",
+        "keywords": [
+          "bankafschrift parser",
+          "bankafschrift naar csv"
         ]
       },
-      "show_built_with": false,
-      "show_theme": false,
-      "show_locale": false,
-      "agreement": {
-        "items": [
-          {
-            "title": "Privacybeleid",
-            "url": "/privacy-policy"
-          },
-          {
-            "title": "Servicevoorwaarden",
-            "url": "/terms-of-service"
-          }
+      {
+        "id": "document-extraction",
+        "badge": "Enterprise",
+        "h3": "Software voor Geautomatiseerde Documentverwerking",
+        "description": "Schaal data-extractie in je hele organisatie. Verwerk duizenden documenten via onze API, activeer webhooks en integreer met bestaande data pipelines. Ondersteunt 50+ formaten naast PDF voor intelligente documentverwerking.",
+        "keywords": [
+          "document extractie",
+          "document parser",
+          "geautomatiseerde documentverwerking",
+          "pdf automatisering",
+          "intelligente documentverwerking"
+        ]
+      },
+      {
+        "id": "handwriting-recognition",
+        "badge": "OCR & Digitalisering",
+        "h3": "Handschrift naar Tekst Converter",
+        "description": "Digitaliseer handgeschreven formulieren, notities en recepten met hoge precisie. Onze multi-engine OCR verwerkt naadloos gemengde gedrukte en handgeschreven inhoud op dezelfde pagina, in meerdere talen.",
+        "keywords": [
+          "handschrift naar tekst converter",
+          "ocr handschrift",
+          "handschriftherkenning"
+        ]
+      },
+      {
+        "id": "legal-document-extraction",
+        "badge": "Juridisch & Compliance",
+        "h3": "Juridische Data Extractie",
+        "description": "Haal belangrijke clausules, partijen, datums en verplichtingen uit contracten en wettelijke deponeringen. Versnel juridische controles met gestructureerde output, klaar voor je LLM of contractanalyseplatform.",
+        "keywords": [
+          "juridische data extractie",
+          "contract extractie",
+          "nda parser"
         ]
       }
+    ]
+  },
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "xparse",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Playground",
+          "url": "/playground",
+          "icon": "Code2"
+        },
+        {
+          "title": "Prijzen",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Facturering",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Activiteit",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true,
+    "topbanner": {}
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "xparse",
+      "description": "AI-gedreven documentverwerking die PDF's, afbeeldingen en bestanden in seconden omzet in schone, LLM-klare Markdown en gestructureerde JSON.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Product",
+          "children": [
+            {
+              "title": "Playground",
+              "url": "/playground",
+              "target": "_self"
+            },
+            {
+              "title": "Prijzen",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": false,
+    "show_locale": false,
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacybeleid",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Servicevoorwaarden",
+          "url": "/terms-of-service"
+        }
+      ]
     }
   }
+}

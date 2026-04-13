@@ -1,214 +1,285 @@
 {
-    "metadata": {
-      "title": "API di Elaborazione Documenti AI & Scraper PDF",
-      "description": "Elaborazione intelligente dei documenti con API al 99,9%. Estrai dati da PDF e immagini in JSON, Markdown o da PDF in XML per LLM e RAG. Inizia gratis.",
-      "keywords": "elaborazione documenti, estrarre dati da PDF, scraper PDF, PDF in XML, estrai PDF, estrarre dati da immagine, elaborazione automatizzata dei documenti, elaborazione intelligente dei documenti, OCR, parser documenti AI"
+  "metadata": {
+    "title": "API di Elaborazione Documenti AI & Scraper PDF",
+    "description": "Elaborazione intelligente dei documenti con API al 99,9%. Estrai dati da PDF e immagini in JSON, Markdown o da PDF in XML per LLM e RAG. Inizia gratis.",
+    "keywords": "elaborazione documenti, estrarre dati da PDF, scraper PDF, PDF in XML, estrai PDF, estrarre dati da immagine, elaborazione automatizzata dei documenti, elaborazione intelligente dei documenti, OCR, parser documenti AI"
+  },
+  "hero": {
+    "badge": "API per l'Elaborazione Documenti",
+    "headline_highlight": "Estrai PDF",
+    "headline_rest": "e Dati in Pochi Secondi per LLM",
+    "subtitle": "Prepara l'elaborazione automatizzata dei documenti per l'IA generativa",
+    "stats": [
+      {
+        "value": "99.99%",
+        "label": "Precisione di Parsing"
+      },
+      {
+        "value": "5s",
+        "label": "Ogni 100 Pagine PDF"
+      },
+      {
+        "value": "1000",
+        "label": "Pagine Max per PDF"
+      },
+      {
+        "value": "100+",
+        "label": "Formati Supportati"
+      }
+    ],
+    "parse_mode": {
+      "standard": {
+        "title": "Parsing Standard",
+        "desc": "Riconoscimento ad altissima precisione della struttura e del layout per l'elaborazione documenti."
+      },
+      "vlm": {
+        "title": "Parsing VLM",
+        "desc": "Vision-Language Model (VLM) — Comprende i file visivi per estrarre dati da immagine e li descrive in linguaggio naturale."
+      }
     },
-    "hero": {
-      "badge": "API per l'Elaborazione Documenti",
-      "headline_highlight": "Estrai PDF",
-      "headline_rest": "e Dati in Pochi Secondi per LLM",
-      "subtitle": "Prepara l'elaborazione automatizzata dei documenti per l'IA generativa",
-      "stats": [
-        { "value": "99.99%", "label": "Precisione di Parsing" },
-        { "value": "5s", "label": "Ogni 100 Pagine PDF" },
-        { "value": "1000", "label": "Pagine Max per PDF" },
-        { "value": "100+", "label": "Formati Supportati" }
-      ],
-      "parse_mode": {
-        "standard": {
-          "title": "Parsing Standard",
-          "desc": "Riconoscimento ad altissima precisione della struttura e del layout per l'elaborazione documenti."
-        },
-        "vlm": {
-          "title": "Parsing VLM",
-          "desc": "Vision-Language Model (VLM) — Comprende i file visivi per estrarre dati da immagine e li descrive in linguaggio naturale."
-        }
-      },
-      "upload": {
-        "idle": "Trascina qui il tuo documento",
-        "dragging": "Rilascia per analizzare",
-        "uploaded": "File caricato! Elaborazione...",
-        "browse": "sfoglia i file",
-        "formats_hint": "PDF, Word, Excel, Immagini e altri"
-      },
-      "free_banner": {
-        "title_before": "Gratuito e",
-        "title_highlight": "illimitato",
-        "title_after": "— registrati per iniziare",
-        "desc": "Crea un account gratuito per estrarre dati da PDF e immagini istantaneamente senza limiti. Supporta scansioni e moduli scritti a mano."
-      },
-      "cta_primary": "Inizia a Estrarre Dati Gratis",
-      "cta_secondary": "Prova la Playground",
-      "trust_badges": [
-        "Accedi con Google o Email",
-        "Uso gratuito illimitato",
-        "Nessuna carta di credito"
-      ],
-      "samples_title": "Esempi di utilizzo",
-      "formats_section_label": "Formati di Input Supportati",
-      "pipeline_label": "Pipeline di Elaborazione",
-      "pipeline": [
-        { "step": "01", "label": "Analisi", "desc": "OCR + Analisi del Layout" },
-        { "step": "02", "label": "Chunk", "desc": "Segmentazione Semantica" },
-        { "step": "03", "label": "Embed", "desc": "Embedding Vettoriale" },
-        { "step": "04", "label": "Estrazione", "desc": "Output Strutturato" }
-      ]
+    "upload": {
+      "idle": "Trascina qui il tuo documento",
+      "dragging": "Rilascia per analizzare",
+      "uploaded": "File caricato! Elaborazione...",
+      "browse": "sfoglia i file",
+      "formats_hint": "PDF, Word, Excel, Immagini e altri"
     },
-    "use_cases": {
-      "label": "Casi d'Uso",
-      "heading": "L'API di Elaborazione Documenti per Ogni Tuo Workflow",
-      "subheading": "Dall'estrarre dati da PDF all'analisi di CV ed estratti conto: un'unica soluzione gestisce tutta l'elaborazione intelligente dei documenti.",
-      "industries": [
-        { "icon": "💰", "title": "Finanza e Banche", "desc": "Bilanci, relazioni annuali, report finanziari" },
-        { "icon": "🧾", "title": "Fatture e Ricevute", "desc": "Fatture elettroniche, ordini, scontrini" },
-        { "icon": "⚕️", "title": "Settore Medico", "desc": "Cartelle cliniche, referti, prescrizioni" },
-        { "icon": "⚖️", "title": "Legale e Contratti", "desc": "Accordi, NDA, depositi normativi" }
-      ],
-      "cta_heading": "Pronto per il tuo primo scraper PDF?",
-      "cta_sub": "Accedi e ottieni 100 crediti gratis. Nessuna carta di credito richiesta.",
-      "cta_button": "Elabora Documento Gratis",
-      "try_free": "Prova questo caso d'uso gratis",
-      "items": [
-        {
-          "id": "pdf-parsing",
-          "badge": "Più Popolare",
-          "h3": "Scraper PDF & Estrazione Dati",
-          "description": "Utilizza il nostro scraper PDF per estrarre dati da PDF di qualsiasi tipo: fatture, report e documenti scansionati. Converti direttamente da PDF in XML, JSON, CSV o Markdown. Ideale per alimentare pipeline RAG e applicazioni LLM.",
-          "keywords": ["estrarre dati da pdf", "scraper pdf", "pdf in xml", "estrai pdf", "parser pdf"]
-        },
-        {
-          "id": "resume-parser",
-          "badge": "Risorse Umane",
-          "h3": "Parser di CV AI & Estrazione Competenze",
-          "description": "Estrai automaticamente informazioni dai curriculum in qualsiasi formato. Puoi anche estrarre dati da immagine se il CV è scansionato. Ottieni output strutturati con nome, contatti, esperienze e competenze per il tuo software ATS.",
-          "keywords": ["estrarre dati da immagine", "parser di cv", "estrazione dati curriculum", "ai hr parser"]
-        },
-        {
-          "id": "bank-statement-parser",
-          "badge": "Finanza & Compliance",
-          "h3": "Parser di Estratti Conto",
-          "description": "Converti estratti conto bancari in CSV o JSON puliti e strutturati. Estrae automaticamente date, descrizioni, importi e saldi. Supporta l'elaborazione documenti multipagina e l'estrazione da conti in valuta estera.",
-          "keywords": ["parser estratti conto", "da estratto conto a csv", "estrazione dati bancari"]
-        },
-        {
-          "id": "document-extraction",
-          "badge": "Enterprise",
-          "h3": "Software per l'Elaborazione Automatizzata dei Documenti",
-          "description": "Scala l'elaborazione automatizzata dei documenti in tutta l'azienda. Elabora migliaia di file in batch tramite API, attiva webhook e integra i dati nelle tue pipeline. Supporta Word, Excel, HTML e oltre 50 formati oltre al PDF.",
-          "keywords": ["elaborazione automatizzata dei documenti", "elaborazione documenti", "estrazione dati aziendali"]
-        },
-        {
-          "id": "handwriting-recognition",
-          "badge": "OCR & Digitalizzazione",
-          "h3": "Conversione da Scrittura Manuale a Testo",
-          "description": "Digitalizza appunti, prescrizioni e moduli scritti a mano con altissima precisione. Il nostro sistema OCR gestisce documenti misti con testo stampato e manuale, facilitando l'elaborazione intelligente dei documenti multilingua.",
-          "keywords": ["ocr scrittura a mano", "da scrittura a testo", "elaborazione intelligente dei documenti"]
-        },
-        {
-          "id": "legal-document-extraction",
-          "badge": "Legale & Compliance",
-          "h3": "Estrazione Dati da Documenti Legali",
-          "description": "Estrai clausole chiave, parti coinvolte, scadenze e termini legali da contratti e NDA. Accelera la due diligence con output leggibili dalle macchine, pronti per essere analizzati dai tuoi modelli linguistici (LLM).",
-          "keywords": ["estrazione dati contratti", "analisi documenti legali", "parser nda"]
-        }
-      ]
+    "free_banner": {
+      "title_before": "Gratuito e",
+      "title_highlight": "illimitato",
+      "title_after": "— registrati per iniziare",
+      "desc": "Crea un account gratuito per estrarre dati da PDF e immagini istantaneamente senza limiti. Supporta scansioni e moduli scritti a mano."
     },
-    "header": {
-      "id": "header",
-      "brand": {
-        "title": "xparse",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 100,
-          "height": 100
-        },
-        "url": "/"
+    "cta_primary": "Inizia a Estrarre Dati Gratis",
+    "cta_secondary": "Prova la Playground",
+    "trust_badges": [
+      "Accedi con Google o Email",
+      "Uso gratuito illimitato",
+      "Nessuna carta di credito"
+    ],
+    "samples_title": "Esempi di utilizzo",
+    "formats_section_label": "Formati di Input Supportati",
+    "pipeline_label": "Pipeline di Elaborazione",
+    "pipeline": [
+      {
+        "step": "01",
+        "label": "Analisi",
+        "desc": "OCR + Analisi del Layout"
       },
-      "nav": {
-        "items": [
-          {
-            "title": "Playground",
-            "url": "/playground",
-            "icon": "Code2"
-          },
-          {
-            "title": "Prezzi",
-            "url": "/pricing",
-            "icon": "DollarSign"
-          }
+      {
+        "step": "02",
+        "label": "Chunk",
+        "desc": "Segmentazione Semantica"
+      },
+      {
+        "step": "03",
+        "label": "Embed",
+        "desc": "Embedding Vettoriale"
+      },
+      {
+        "step": "04",
+        "label": "Estrazione",
+        "desc": "Output Strutturato"
+      }
+    ]
+  },
+  "use_cases": {
+    "label": "Casi d'Uso",
+    "heading": "L'API di Elaborazione Documenti per Ogni Tuo Workflow",
+    "subheading": "Dall'estrarre dati da PDF all'analisi di CV ed estratti conto: un'unica soluzione gestisce tutta l'elaborazione intelligente dei documenti.",
+    "industries": [
+      {
+        "icon": "💰",
+        "title": "Finanza e Banche",
+        "desc": "Bilanci, relazioni annuali, report finanziari"
+      },
+      {
+        "icon": "🧾",
+        "title": "Fatture e Ricevute",
+        "desc": "Fatture elettroniche, ordini, scontrini"
+      },
+      {
+        "icon": "⚕️",
+        "title": "Settore Medico",
+        "desc": "Cartelle cliniche, referti, prescrizioni"
+      },
+      {
+        "icon": "⚖️",
+        "title": "Legale e Contratti",
+        "desc": "Accordi, NDA, depositi normativi"
+      }
+    ],
+    "cta_heading": "Pronto per il tuo primo scraper PDF?",
+    "cta_sub": "Accedi e ottieni 100 crediti gratis. Nessuna carta di credito richiesta.",
+    "cta_button": "Elabora Documento Gratis",
+    "try_free": "Prova questo caso d'uso gratis",
+    "items": [
+      {
+        "id": "pdf-parsing",
+        "badge": "Più Popolare",
+        "h3": "Scraper PDF & Estrazione Dati",
+        "description": "Utilizza il nostro scraper PDF per estrarre dati da PDF di qualsiasi tipo: fatture, report e documenti scansionati. Converti direttamente da PDF in XML, JSON, CSV o Markdown. Ideale per alimentare pipeline RAG e applicazioni LLM.",
+        "keywords": [
+          "estrarre dati da pdf",
+          "scraper pdf",
+          "pdf in xml",
+          "estrai pdf",
+          "parser pdf"
         ]
       },
-      "buttons": [],
-      "user_nav": {
-        "show_name": true,
-        "show_credits": true,
-        "show_sign_out": true,
-        "items": [
-          {
-            "title": "Fatturazione",
-            "url": "/settings/billing",
-            "icon": "CreditCard"
-          },
-          {
-            "title": "Attività",
-            "url": "/activity",
-            "icon": "Activity"
-          }
+      {
+        "id": "resume-parser",
+        "badge": "Risorse Umane",
+        "h3": "Parser di CV AI & Estrazione Competenze",
+        "description": "Estrai automaticamente informazioni dai curriculum in qualsiasi formato. Puoi anche estrarre dati da immagine se il CV è scansionato. Ottieni output strutturati con nome, contatti, esperienze e competenze per il tuo software ATS.",
+        "keywords": [
+          "estrarre dati da immagine",
+          "parser di cv",
+          "estrazione dati curriculum",
+          "ai hr parser"
         ]
       },
-      "show_sign": true,
-      "show_theme": false,
-      "show_locale": false,
-      "topbanner": {}
-    },
-    "footer": {
-      "id": "footer",
-      "brand": {
-        "title": "xparse",
-        "description": "L'elaborazione documenti basata sull'IA che converte PDF, immagini e file d'ufficio in Markdown pulito e JSON strutturato, pronti per LLM in pochi secondi.",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 1024,
-          "height": 1024
-        },
-        "url": "/"
-      },
-      "nav": {
-        "items": [
-          {
-            "title": "Prodotto",
-            "children": [
-              {
-                "title": "Playground",
-                "url": "/playground",
-                "target": "_self"
-              },
-              {
-                "title": "Prezzi",
-                "url": "/pricing",
-                "target": "_self"
-              }
-            ]
-          }
+      {
+        "id": "bank-statement-parser",
+        "badge": "Finanza & Compliance",
+        "h3": "Parser di Estratti Conto",
+        "description": "Converti estratti conto bancari in CSV o JSON puliti e strutturati. Estrae automaticamente date, descrizioni, importi e saldi. Supporta l'elaborazione documenti multipagina e l'estrazione da conti in valuta estera.",
+        "keywords": [
+          "parser estratti conto",
+          "da estratto conto a csv",
+          "estrazione dati bancari"
         ]
       },
-      "show_built_with": false,
-      "show_theme": false,
-      "show_locale": false,
-      "agreement": {
-        "items": [
-          {
-            "title": "Privacy Policy",
-            "url": "/privacy-policy"
-          },
-          {
-            "title": "Termini di Servizio",
-            "url": "/terms-of-service"
-          }
+      {
+        "id": "document-extraction",
+        "badge": "Enterprise",
+        "h3": "Software per l'Elaborazione Automatizzata dei Documenti",
+        "description": "Scala l'elaborazione automatizzata dei documenti in tutta l'azienda. Elabora migliaia di file in batch tramite API, attiva webhook e integra i dati nelle tue pipeline. Supporta Word, Excel, HTML e oltre 50 formati oltre al PDF.",
+        "keywords": [
+          "elaborazione automatizzata dei documenti",
+          "elaborazione documenti",
+          "estrazione dati aziendali"
+        ]
+      },
+      {
+        "id": "handwriting-recognition",
+        "badge": "OCR & Digitalizzazione",
+        "h3": "Conversione da Scrittura Manuale a Testo",
+        "description": "Digitalizza appunti, prescrizioni e moduli scritti a mano con altissima precisione. Il nostro sistema OCR gestisce documenti misti con testo stampato e manuale, facilitando l'elaborazione intelligente dei documenti multilingua.",
+        "keywords": [
+          "ocr scrittura a mano",
+          "da scrittura a testo",
+          "elaborazione intelligente dei documenti"
+        ]
+      },
+      {
+        "id": "legal-document-extraction",
+        "badge": "Legale & Compliance",
+        "h3": "Estrazione Dati da Documenti Legali",
+        "description": "Estrai clausole chiave, parti coinvolte, scadenze e termini legali da contratti e NDA. Accelera la due diligence con output leggibili dalle macchine, pronti per essere analizzati dai tuoi modelli linguistici (LLM).",
+        "keywords": [
+          "estrazione dati contratti",
+          "analisi documenti legali",
+          "parser nda"
         ]
       }
+    ]
+  },
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "xparse",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Playground",
+          "url": "/playground",
+          "icon": "Code2"
+        },
+        {
+          "title": "Prezzi",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Fatturazione",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Attività",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true,
+    "topbanner": {}
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "xparse",
+      "description": "L'elaborazione documenti basata sull'IA che converte PDF, immagini e file d'ufficio in Markdown pulito e JSON strutturato, pronti per LLM in pochi secondi.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Prodotto",
+          "children": [
+            {
+              "title": "Playground",
+              "url": "/playground",
+              "target": "_self"
+            },
+            {
+              "title": "Prezzi",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": false,
+    "show_locale": false,
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Termini di Servizio",
+          "url": "/terms-of-service"
+        }
+      ]
     }
   }
+}

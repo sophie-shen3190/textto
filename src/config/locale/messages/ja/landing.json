@@ -1,214 +1,288 @@
 {
-    "metadata": {
-      "title": "AI文書処理＆PDFスクレイパー | 99.99%の精度でデータ抽出",
-      "description": "高精度なAI文書処理API。PDFからデータ抽出、画像からデータを抽出して、Markdown、JSON、XML形式に正確に出力します。PDFをXMLに変換、PDFからJSONへの変換も瞬時に完了し、LLMやRAGに最適な構造化データを生成。無料100クレジットで最新のpdf テキスト抽出をお試しください。",
-      "keywords": "AI文書処理, pdf テキスト抽出, PDFスクレイパー, 手書きOCR, PDFからJSONへの変換, PDFをXMLに変換, 画像からデータを抽出, PDFからデータ抽出, 文書処理ソフトウェア"
+  "metadata": {
+    "title": "AI文書処理＆PDFスクレイパー | 99.99%の精度でデータ抽出",
+    "description": "高精度なAI文書処理API。PDFからデータ抽出、画像からデータを抽出して、Markdown、JSON、XML形式に正確に出力します。PDFをXMLに変換、PDFからJSONへの変換も瞬時に完了し、LLMやRAGに最適な構造化データを生成。無料100クレジットで最新のpdf テキスト抽出をお試しください。",
+    "keywords": "AI文書処理, pdf テキスト抽出, PDFスクレイパー, 手書きOCR, PDFからJSONへの変換, PDFをXMLに変換, 画像からデータを抽出, PDFからデータ抽出, 文書処理ソフトウェア"
+  },
+  "hero": {
+    "badge": "AI文書処理＆PDFスクレイパー",
+    "headline_highlight": "あらゆる文書を解析",
+    "headline_rest": "数秒でLLM対応データへ",
+    "subtitle": "生成AI向けのデータ準備を自動化",
+    "stats": [
+      {
+        "value": "99.99%",
+        "label": "解析精度"
+      },
+      {
+        "value": "5秒",
+        "label": "PDF 100ページあたり"
+      },
+      {
+        "value": "1000",
+        "label": "最大ページ数/PDF"
+      },
+      {
+        "value": "100+",
+        "label": "対応ファイル形式"
+      }
+    ],
+    "parse_mode": {
+      "standard": {
+        "title": "標準解析",
+        "desc": "PDFや文書ファイル向けの高精度なレイアウトおよび構造認識。"
+      },
+      "vlm": {
+        "title": "VLM解析",
+        "desc": "視覚言語モデル（VLM）— 文書内の画像からデータを抽出・理解し、自然言語で記述します。"
+      }
     },
-    "hero": {
-      "badge": "AI文書処理＆PDFスクレイパー",
-      "headline_highlight": "あらゆる文書を解析",
-      "headline_rest": "数秒でLLM対応データへ",
-      "subtitle": "生成AI向けのデータ準備を自動化",
-      "stats": [
-        { "value": "99.99%", "label": "解析精度" },
-        { "value": "5秒", "label": "PDF 100ページあたり" },
-        { "value": "1000", "label": "最大ページ数/PDF" },
-        { "value": "100+", "label": "対応ファイル形式" }
-      ],
-      "parse_mode": {
-        "standard": {
-          "title": "標準解析",
-          "desc": "PDFや文書ファイル向けの高精度なレイアウトおよび構造認識。"
-        },
-        "vlm": {
-          "title": "VLM解析",
-          "desc": "視覚言語モデル（VLM）— 文書内の画像からデータを抽出・理解し、自然言語で記述します。"
-        }
-      },
-      "upload": {
-        "idle": "ここにドキュメントをドロップ",
-        "dragging": "ドロップして解析",
-        "uploaded": "アップロード完了！処理中…",
-        "browse": "ファイルを参照",
-        "formats_hint": "PDF、Word、Excel、画像などに対応"
-      },
-      "free_banner": {
-        "title_before": "無料＆",
-        "title_highlight": "無制限",
-        "title_after": "— 登録して始める",
-        "desc": "無料アカウントを作成すれば、使用制限なしで瞬時にPDFや画像からデータを抽出できます。スキャンした文書や手書きOCRなど、あらゆる形式に対応しています。"
-      },
-      "cta_primary": "無料で始める — 無制限利用",
-      "cta_secondary": "プレイグラウンドを試す",
-      "trust_badges": [
-        "Googleまたはメールでログイン",
-        "無制限の無料利用",
-        "クレジットカード不要"
-      ],
-      "samples_title": "ユースケースのサンプル",
-      "formats_section_label": "対応する入力フォーマット",
-      "pipeline_label": "処理パイプライン",
-      "pipeline": [
-        { "step": "01", "label": "解析", "desc": "OCR + レイアウト分析" },
-        { "step": "02", "label": "チャンク化", "desc": "意味的セグメンテーション" },
-        { "step": "03", "label": "埋め込み", "desc": "ベクトル埋め込み" },
-        { "step": "04", "label": "抽出", "desc": "構造化出力" }
-      ]
+    "upload": {
+      "idle": "ここにドキュメントをドロップ",
+      "dragging": "ドロップして解析",
+      "uploaded": "アップロード完了！処理中…",
+      "browse": "ファイルを参照",
+      "formats_hint": "PDF、Word、Excel、画像などに対応"
     },
-    "use_cases": {
-      "label": "ユースケース",
-      "heading": "あらゆるワークフローに対応するAI文書処理ソフトウェア",
-      "subheading": "PDFからデータ抽出、履歴書、銀行取引明細書の解析まで。あなたのアプリケーションに必要なすべてのpdf テキスト抽出を、1つのAPIで実現します。",
-      "industries": [
-        { "icon": "💰", "title": "金融・銀行", "desc": "年次報告書、有価証券報告書、貸借対照表" },
-        { "icon": "🧾", "title": "請求書・領収書", "desc": "適格請求書、発注書、レシート" },
-        { "icon": "⚕️", "title": "医療・ヘルスケア", "desc": "カルテ、検査報告書、処方箋" },
-        { "icon": "⚖️", "title": "法務・契約", "desc": "契約書、NDA、規制当局への提出書類" }
-      ],
-      "cta_heading": "最初のドキュメントを解析する準備はできましたか？",
-      "cta_sub": "サインインして100無料クレジットを取得しましょう。クレジットカードは不要です。",
-      "cta_button": "無料で始める — 100クレジット",
-      "try_free": "このユースケースを無料で試す",
-      "items": [
-        {
-          "id": "pdf-parsing",
-          "badge": "一番人気",
-          "h3": "PDF解析＆データ抽出",
-          "description": "あらゆるPDF（財務報告書、論文、スキャンした請求書など）から構造化データを抽出します。PDFからJSONへの変換や、CSV、PDFをXMLに変換して出力し、各要素の座標も正規化します。RAGパイプラインやLLMアプリの構築に最適です。",
-          "keywords": ["pdf テキスト抽出", "PDFからデータ抽出", "PDFからJSONへの変換", "pdf データ抽出 オンライン", "PDFスクレイパー", "PDFをXMLに変換"]
-        },
-        {
-          "id": "resume-parser",
-          "badge": "人事・採用",
-          "h3": "AI履歴書解析＆データ抽出",
-          "description": "PDF、Word、画像スキャンなど、あらゆる形式の履歴書から候補者情報を自動的に抽出します。画像からデータを抽出し、名前、連絡先、スキル、職歴などを構造化して出力。ATSや人事自動化パイプラインに直接組み込めます。",
-          "keywords": ["履歴書 解析", "ai 履歴書抽出", "履歴書 データ抽出", "画像からデータを抽出"]
-        },
-        {
-          "id": "bank-statement-parser",
-          "badge": "財務・コンプライアンス",
-          "h3": "銀行取引明細書パーサー",
-          "description": "あらゆる金融機関の取引明細書を、クリーンなCSVやJSONに変換します。pdfからexcelにデータ抽出する感覚で、取引日、説明、入出金金額を自動抽出。複数ページの明細書や外貨口座、スキャンしたPDFにも対応しています。",
-          "keywords": ["明細書 データ抽出", "pdfからexcelにデータ抽出", "pdf データ抽出"]
-        },
-        {
-          "id": "document-extraction",
-          "badge": "エンタープライズ",
-          "h3": "文書処理ソフトウェア＆自動化",
-          "description": "組織全体のデータ抽出をスケールさせます。API経由で数千件のドキュメントを一括処理し、既存のデータパイプラインと統合。PDFに加えてWord、Excel、HTMLなど50以上の形式に対応し、PDFをGoogleスプレッドシートに変換するような自動化も可能です。",
-          "keywords": ["文書処理ソフトウェア", "PDFをGoogleスプレッドシートに変換", "文書処理", "ドキュメント自動化"]
-        },
-        {
-          "id": "handwriting-recognition",
-          "badge": "OCR・デジタル化",
-          "h3": "手書きOCR＆テキスト変換",
-          "description": "手書きのフォーム、メモ、処方箋、領収書を高精度でデジタル化します。当社のマルチエンジンOCRは、同じページに印刷文字と手書きOCRが混在するコンテンツでも正確に処理し、英語および多言語の文書に対応しています。",
-          "keywords": ["手書きOCR", "手書き ocr", "ocr 手書き", "ai-ocr 手書き"]
-        },
-        {
-          "id": "legal-document-extraction",
-          "badge": "法務・コンプライアンス",
-          "h3": "法務文書データ抽出",
-          "description": "契約書、NDA、規制文書から、主要な条項、当事者、日付、義務事項を抽出します。LLMや契約分析プラットフォームでそのまま使える機械可読な構造化データを出力し、法務レビューやデューデリジェンスを加速させます。",
-          "keywords": ["法務文書 データ抽出", "契約書 データ抽出", "NDA 解析"]
-        }
-      ]
+    "free_banner": {
+      "title_before": "無料＆",
+      "title_highlight": "無制限",
+      "title_after": "— 登録して始める",
+      "desc": "無料アカウントを作成すれば、使用制限なしで瞬時にPDFや画像からデータを抽出できます。スキャンした文書や手書きOCRなど、あらゆる形式に対応しています。"
     },
-    "header": {
-      "id": "header",
-      "brand": {
-        "title": "xparse",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 100,
-          "height": 100
-        },
-        "url": "/"
+    "cta_primary": "無料で始める — 無制限利用",
+    "cta_secondary": "プレイグラウンドを試す",
+    "trust_badges": [
+      "Googleまたはメールでログイン",
+      "無制限の無料利用",
+      "クレジットカード不要"
+    ],
+    "samples_title": "ユースケースのサンプル",
+    "formats_section_label": "対応する入力フォーマット",
+    "pipeline_label": "処理パイプライン",
+    "pipeline": [
+      {
+        "step": "01",
+        "label": "解析",
+        "desc": "OCR + レイアウト分析"
       },
-      "nav": {
-        "items": [
-          {
-            "title": "プレイグラウンド",
-            "url": "/playground",
-            "icon": "Code2"
-          },
-          {
-            "title": "料金プラン",
-            "url": "/pricing",
-            "icon": "DollarSign"
-          }
+      {
+        "step": "02",
+        "label": "チャンク化",
+        "desc": "意味的セグメンテーション"
+      },
+      {
+        "step": "03",
+        "label": "埋め込み",
+        "desc": "ベクトル埋め込み"
+      },
+      {
+        "step": "04",
+        "label": "抽出",
+        "desc": "構造化出力"
+      }
+    ]
+  },
+  "use_cases": {
+    "label": "ユースケース",
+    "heading": "あらゆるワークフローに対応するAI文書処理ソフトウェア",
+    "subheading": "PDFからデータ抽出、履歴書、銀行取引明細書の解析まで。あなたのアプリケーションに必要なすべてのpdf テキスト抽出を、1つのAPIで実現します。",
+    "industries": [
+      {
+        "icon": "💰",
+        "title": "金融・銀行",
+        "desc": "年次報告書、有価証券報告書、貸借対照表"
+      },
+      {
+        "icon": "🧾",
+        "title": "請求書・領収書",
+        "desc": "適格請求書、発注書、レシート"
+      },
+      {
+        "icon": "⚕️",
+        "title": "医療・ヘルスケア",
+        "desc": "カルテ、検査報告書、処方箋"
+      },
+      {
+        "icon": "⚖️",
+        "title": "法務・契約",
+        "desc": "契約書、NDA、規制当局への提出書類"
+      }
+    ],
+    "cta_heading": "最初のドキュメントを解析する準備はできましたか？",
+    "cta_sub": "サインインして100無料クレジットを取得しましょう。クレジットカードは不要です。",
+    "cta_button": "無料で始める — 100クレジット",
+    "try_free": "このユースケースを無料で試す",
+    "items": [
+      {
+        "id": "pdf-parsing",
+        "badge": "一番人気",
+        "h3": "PDF解析＆データ抽出",
+        "description": "あらゆるPDF（財務報告書、論文、スキャンした請求書など）から構造化データを抽出します。PDFからJSONへの変換や、CSV、PDFをXMLに変換して出力し、各要素の座標も正規化します。RAGパイプラインやLLMアプリの構築に最適です。",
+        "keywords": [
+          "pdf テキスト抽出",
+          "PDFからデータ抽出",
+          "PDFからJSONへの変換",
+          "pdf データ抽出 オンライン",
+          "PDFスクレイパー",
+          "PDFをXMLに変換"
         ]
       },
-      "buttons": [],
-      "user_nav": {
-        "show_name": true,
-        "show_credits": true,
-        "show_sign_out": true,
-        "items": [
-          {
-            "title": "支払い情報",
-            "url": "/settings/billing",
-            "icon": "CreditCard"
-          },
-          {
-            "title": "アクティビティ",
-            "url": "/activity",
-            "icon": "Activity"
-          }
+      {
+        "id": "resume-parser",
+        "badge": "人事・採用",
+        "h3": "AI履歴書解析＆データ抽出",
+        "description": "PDF、Word、画像スキャンなど、あらゆる形式の履歴書から候補者情報を自動的に抽出します。画像からデータを抽出し、名前、連絡先、スキル、職歴などを構造化して出力。ATSや人事自動化パイプラインに直接組み込めます。",
+        "keywords": [
+          "履歴書 解析",
+          "ai 履歴書抽出",
+          "履歴書 データ抽出",
+          "画像からデータを抽出"
         ]
       },
-      "show_sign": true,
-      "show_theme": false,
-      "show_locale": false,
-      "topbanner": {}
-    },
-    "footer": {
-      "id": "footer",
-      "brand": {
-        "title": "xparse",
-        "description": "PDF、画像、オフィスファイルを数秒でクリーンなLLM対応のMarkdownや構造化JSONに変換する、AI搭載の文書処理API。",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 1024,
-          "height": 1024
-        },
-        "url": "/"
-      },
-      "nav": {
-        "items": [
-          {
-            "title": "プロダクト",
-            "children": [
-              {
-                "title": "プレイグラウンド",
-                "url": "/playground",
-                "target": "_self"
-              },
-              {
-                "title": "料金プラン",
-                "url": "/pricing",
-                "target": "_self"
-              }
-            ]
-          }
+      {
+        "id": "bank-statement-parser",
+        "badge": "財務・コンプライアンス",
+        "h3": "銀行取引明細書パーサー",
+        "description": "あらゆる金融機関の取引明細書を、クリーンなCSVやJSONに変換します。pdfからexcelにデータ抽出する感覚で、取引日、説明、入出金金額を自動抽出。複数ページの明細書や外貨口座、スキャンしたPDFにも対応しています。",
+        "keywords": [
+          "明細書 データ抽出",
+          "pdfからexcelにデータ抽出",
+          "pdf データ抽出"
         ]
       },
-      "show_built_with": false,
-      "show_theme": false,
-      "show_locale": false,
-      "agreement": {
-        "items": [
-          {
-            "title": "プライバシーポリシー",
-            "url": "/privacy-policy"
-          },
-          {
-            "title": "利用規約",
-            "url": "/terms-of-service"
-          }
+      {
+        "id": "document-extraction",
+        "badge": "エンタープライズ",
+        "h3": "文書処理ソフトウェア＆自動化",
+        "description": "組織全体のデータ抽出をスケールさせます。API経由で数千件のドキュメントを一括処理し、既存のデータパイプラインと統合。PDFに加えてWord、Excel、HTMLなど50以上の形式に対応し、PDFをGoogleスプレッドシートに変換するような自動化も可能です。",
+        "keywords": [
+          "文書処理ソフトウェア",
+          "PDFをGoogleスプレッドシートに変換",
+          "文書処理",
+          "ドキュメント自動化"
+        ]
+      },
+      {
+        "id": "handwriting-recognition",
+        "badge": "OCR・デジタル化",
+        "h3": "手書きOCR＆テキスト変換",
+        "description": "手書きのフォーム、メモ、処方箋、領収書を高精度でデジタル化します。当社のマルチエンジンOCRは、同じページに印刷文字と手書きOCRが混在するコンテンツでも正確に処理し、英語および多言語の文書に対応しています。",
+        "keywords": [
+          "手書きOCR",
+          "手書き ocr",
+          "ocr 手書き",
+          "ai-ocr 手書き"
+        ]
+      },
+      {
+        "id": "legal-document-extraction",
+        "badge": "法務・コンプライアンス",
+        "h3": "法務文書データ抽出",
+        "description": "契約書、NDA、規制文書から、主要な条項、当事者、日付、義務事項を抽出します。LLMや契約分析プラットフォームでそのまま使える機械可読な構造化データを出力し、法務レビューやデューデリジェンスを加速させます。",
+        "keywords": [
+          "法務文書 データ抽出",
+          "契約書 データ抽出",
+          "NDA 解析"
         ]
       }
+    ]
+  },
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "xparse",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "プレイグラウンド",
+          "url": "/playground",
+          "icon": "Code2"
+        },
+        {
+          "title": "料金プラン",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "支払い情報",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "アクティビティ",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true,
+    "topbanner": {}
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "xparse",
+      "description": "PDF、画像、オフィスファイルを数秒でクリーンなLLM対応のMarkdownや構造化JSONに変換する、AI搭載の文書処理API。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "プロダクト",
+          "children": [
+            {
+              "title": "プレイグラウンド",
+              "url": "/playground",
+              "target": "_self"
+            },
+            {
+              "title": "料金プラン",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": false,
+    "show_locale": false,
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
     }
   }
+}

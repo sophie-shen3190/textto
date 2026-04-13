@@ -1,214 +1,285 @@
 {
-    "metadata": {
-      "title": "Traitement de documents IA & Analyseur | Précision 99,99%",
-      "description": "API de traitement de documents IA. Extraire des données d'un PDF et factures en JSON ou PDF vers XML. Logiciel d'extraction de données idéal pour LLM.",
-      "keywords": "traitement de documents, extraire PDF, logiciel d'extraction de données, PDF vers XML, analyseur de CV, solutions de traitement de documents, extraire des données d'un PDF"
+  "metadata": {
+    "title": "Traitement de documents IA & Analyseur | Précision 99,99%",
+    "description": "API de traitement de documents IA. Extraire des données d'un PDF et factures en JSON ou PDF vers XML. Logiciel d'extraction de données idéal pour LLM.",
+    "keywords": "traitement de documents, extraire PDF, logiciel d'extraction de données, PDF vers XML, analyseur de CV, solutions de traitement de documents, extraire des données d'un PDF"
+  },
+  "hero": {
+    "badge": "Traitement de documents IA",
+    "headline_highlight": "Analysez Tout Document",
+    "headline_rest": "Prêt pour l'IA en 5s",
+    "subtitle": "Préparez vos fichiers pour les solutions de traitement de documents génératives.",
+    "stats": [
+      {
+        "value": "99.99%",
+        "label": "Précision d'Analyse"
+      },
+      {
+        "value": "5s",
+        "label": "Pour 100 Pages PDF"
+      },
+      {
+        "value": "1000",
+        "label": "Pages Max par PDF"
+      },
+      {
+        "value": "100+",
+        "label": "Formats Pris en Charge"
+      }
+    ],
+    "parse_mode": {
+      "standard": {
+        "title": "Analyse Standard",
+        "desc": "Reconnaissance de haute précision de la mise en page et de la structure pour PDF et documents."
+      },
+      "vlm": {
+        "title": "Analyse VLM",
+        "desc": "Modèle Vision-Langage (VLM) — Comprend les images dans les documents et les décrit en langage naturel."
+      }
     },
-    "hero": {
-      "badge": "Traitement de documents IA",
-      "headline_highlight": "Analysez Tout Document",
-      "headline_rest": "Prêt pour l'IA en 5s",
-      "subtitle": "Préparez vos fichiers pour les solutions de traitement de documents génératives.",
-      "stats": [
-        { "value": "99.99%", "label": "Précision d'Analyse" },
-        { "value": "5s", "label": "Pour 100 Pages PDF" },
-        { "value": "1000", "label": "Pages Max par PDF" },
-        { "value": "100+", "label": "Formats Pris en Charge" }
-      ],
-      "parse_mode": {
-        "standard": {
-          "title": "Analyse Standard",
-          "desc": "Reconnaissance de haute précision de la mise en page et de la structure pour PDF et documents."
-        },
-        "vlm": {
-          "title": "Analyse VLM",
-          "desc": "Modèle Vision-Langage (VLM) — Comprend les images dans les documents et les décrit en langage naturel."
-        }
-      },
-      "upload": {
-        "idle": "Déposez votre document ici",
-        "dragging": "Déposez pour Extraire PDF",
-        "uploaded": "Fichier téléchargé ! Traitement en cours…",
-        "browse": "parcourir les fichiers",
-        "formats_hint": "PDF, Word, Excel, Image et plus"
-      },
-      "free_banner": {
-        "title_before": "Gratuit et",
-        "title_highlight": "illimité",
-        "title_after": "— inscrivez-vous pour commencer",
-        "desc": "Créez un compte gratuit pour analyser instantanément des PDF et des images sans limite d'utilisation. Prend en charge tous les formats, y compris les formulaires numérisés et manuscrits."
-      },
-      "cta_primary": "Extraire PDF Gratuitement",
-      "cta_secondary": "Essayer l'Espace Test",
-      "trust_badges": [
-        "Connexion via Google ou Email",
-        "Utilisation gratuite illimitée",
-        "Aucune carte bancaire requise"
-      ],
-      "samples_title": "Exemples d'utilisation",
-      "formats_section_label": "Formats d'Entrée Supportés",
-      "pipeline_label": "Processus de Traitement",
-      "pipeline": [
-        { "step": "01", "label": "Analyser", "desc": "OCR + Analyse de Mise en Page" },
-        { "step": "02", "label": "Segmenter", "desc": "Segmentation Sémantique" },
-        { "step": "03", "label": "Intégrer", "desc": "Intégration Vectorielle" },
-        { "step": "04", "label": "Extraire", "desc": "Sortie Structurée" }
-      ]
+    "upload": {
+      "idle": "Déposez votre document ici",
+      "dragging": "Déposez pour Extraire PDF",
+      "uploaded": "Fichier téléchargé ! Traitement en cours…",
+      "browse": "parcourir les fichiers",
+      "formats_hint": "PDF, Word, Excel, Image et plus"
     },
-    "use_cases": {
-      "label": "Cas d'Utilisation",
-      "heading": "Logiciel de traitement automatisé de documents pour chaque flux",
-      "subheading": "De l'action d'extraire des données d'un PDF à l'analyse de CV. Demandez un devis traitement de documents ou testez notre API qui gère tout.",
-      "industries": [
-        { "icon": "💰", "title": "Finance & Banque", "desc": "Rapports annuels, bilans, formulaires" },
-        { "icon": "🧾", "title": "Factures & Reçus", "desc": "Factures TVA, bons de commande" },
-        { "icon": "⚕️", "title": "Santé", "desc": "Dossiers médicaux, ordonnances" },
-        { "icon": "⚖️", "title": "Juridique & Contrats", "desc": "Accords, NDA, dépôts réglementaires" }
-      ],
-      "cta_heading": "Prêt à traiter votre premier document ?",
-      "cta_sub": "Connectez-vous et obtenez 100 crédits gratuits. Aucune carte bancaire requise.",
-      "cta_button": "Démarrer — 100 Crédits",
-      "try_free": "Tester ce cas d'usage gratuitement",
-      "items": [
-        {
-          "id": "pdf-parsing",
-          "badge": "Plus Populaire",
-          "h3": "Extraire des données d'un PDF & Analyse",
-          "description": "Extrayez des données structurées de n'importe quel PDF : rapports financiers, factures numérisées. Exportez en JSON, Markdown, CSV, ou convertissez un PDF vers XML avec des coordonnées normalisées. Idéal pour les pipelines RAG.",
-          "keywords": ["pdf parsing", "extraire des données d'un pdf", "pdf to json", "pdf vers xml", "extraire pdf"]
-        },
-        {
-          "id": "resume-parser",
-          "badge": "RH & Recrutement",
-          "h3": "Analyseur de CV IA",
-          "description": "Extrayez automatiquement les informations des candidats via notre analyseur de CV, quel que soit le format (PDF, Word ou image). La sortie structurée inclut le nom, les compétences et l'expérience pour votre ATS.",
-          "keywords": ["analyseur de cv", "resume parser", "extraction de cv", "rh"]
-        },
-        {
-          "id": "bank-statement-parser",
-          "badge": "Finance & Conformité",
-          "h3": "Analyseur de Relevés Bancaires",
-          "description": "Convertissez les relevés bancaires en CSV ou JSON structuré. Extrayez les dates, les montants et repérez même un faux relevé bancaire pour assurer votre conformité financière et lutter contre la fraude.",
-          "keywords": ["analyse de relevé bancaire", "faux relevé bancaire", "bank statement parser"]
-        },
-        {
-          "id": "document-extraction",
-          "badge": "Entreprise",
-          "h3": "Logiciel d'extraction de données",
-          "description": "Faites évoluer l'extraction de documents dans toute votre entreprise. Traitez par lots des milliers de fichiers via l'API de notre logiciel d'extraction de données. Supporte Word, Excel, HTML et plus de 50 formats.",
-          "keywords": ["logiciel d'extraction de données", "document data extraction software", "automatisation pdf"]
-        },
-        {
-          "id": "handwriting-recognition",
-          "badge": "OCR & Numérisation",
-          "h3": "Convertisseur d'Écriture Manuscrite",
-          "description": "Numérisez des formulaires manuscrits, des notes et des ordonnances avec une grande précision. Notre OCR multi-moteurs gère le contenu mixte (imprimé et manuscrit) sur la même page, en anglais et en multilingue.",
-          "keywords": ["écriture manuscrite en texte", "ocr manuscrit", "reconnaissance d'écriture"]
-        },
-        {
-          "id": "legal-document-extraction",
-          "badge": "Juridique & Conformité",
-          "h3": "Extraction de Données Juridiques",
-          "description": "Extrayez les clauses clés, les parties, les dates et les obligations des contrats et NDA. Accélérez la révision juridique avec une sortie structurée et lisible par machine, prête pour votre plateforme d'analyse.",
-          "keywords": ["extraction de données juridiques", "analyse de contrats", "analyseur nda"]
-        }
-      ]
+    "free_banner": {
+      "title_before": "Gratuit et",
+      "title_highlight": "illimité",
+      "title_after": "— inscrivez-vous pour commencer",
+      "desc": "Créez un compte gratuit pour analyser instantanément des PDF et des images sans limite d'utilisation. Prend en charge tous les formats, y compris les formulaires numérisés et manuscrits."
     },
-    "header": {
-      "id": "header",
-      "brand": {
-        "title": "xparse",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 100,
-          "height": 100
-        },
-        "url": "/"
+    "cta_primary": "Extraire PDF Gratuitement",
+    "cta_secondary": "Essayer l'Espace Test",
+    "trust_badges": [
+      "Connexion via Google ou Email",
+      "Utilisation gratuite illimitée",
+      "Aucune carte bancaire requise"
+    ],
+    "samples_title": "Exemples d'utilisation",
+    "formats_section_label": "Formats d'Entrée Supportés",
+    "pipeline_label": "Processus de Traitement",
+    "pipeline": [
+      {
+        "step": "01",
+        "label": "Analyser",
+        "desc": "OCR + Analyse de Mise en Page"
       },
-      "nav": {
-        "items": [
-          {
-            "title": "Espace Test",
-            "url": "/playground",
-            "icon": "Code2"
-          },
-          {
-            "title": "Tarifs",
-            "url": "/pricing",
-            "icon": "DollarSign"
-          }
+      {
+        "step": "02",
+        "label": "Segmenter",
+        "desc": "Segmentation Sémantique"
+      },
+      {
+        "step": "03",
+        "label": "Intégrer",
+        "desc": "Intégration Vectorielle"
+      },
+      {
+        "step": "04",
+        "label": "Extraire",
+        "desc": "Sortie Structurée"
+      }
+    ]
+  },
+  "use_cases": {
+    "label": "Cas d'Utilisation",
+    "heading": "Logiciel de traitement automatisé de documents pour chaque flux",
+    "subheading": "De l'action d'extraire des données d'un PDF à l'analyse de CV. Demandez un devis traitement de documents ou testez notre API qui gère tout.",
+    "industries": [
+      {
+        "icon": "💰",
+        "title": "Finance & Banque",
+        "desc": "Rapports annuels, bilans, formulaires"
+      },
+      {
+        "icon": "🧾",
+        "title": "Factures & Reçus",
+        "desc": "Factures TVA, bons de commande"
+      },
+      {
+        "icon": "⚕️",
+        "title": "Santé",
+        "desc": "Dossiers médicaux, ordonnances"
+      },
+      {
+        "icon": "⚖️",
+        "title": "Juridique & Contrats",
+        "desc": "Accords, NDA, dépôts réglementaires"
+      }
+    ],
+    "cta_heading": "Prêt à traiter votre premier document ?",
+    "cta_sub": "Connectez-vous et obtenez 100 crédits gratuits. Aucune carte bancaire requise.",
+    "cta_button": "Démarrer — 100 Crédits",
+    "try_free": "Tester ce cas d'usage gratuitement",
+    "items": [
+      {
+        "id": "pdf-parsing",
+        "badge": "Plus Populaire",
+        "h3": "Extraire des données d'un PDF & Analyse",
+        "description": "Extrayez des données structurées de n'importe quel PDF : rapports financiers, factures numérisées. Exportez en JSON, Markdown, CSV, ou convertissez un PDF vers XML avec des coordonnées normalisées. Idéal pour les pipelines RAG.",
+        "keywords": [
+          "pdf parsing",
+          "extraire des données d'un pdf",
+          "pdf to json",
+          "pdf vers xml",
+          "extraire pdf"
         ]
       },
-      "buttons": [],
-      "user_nav": {
-        "show_name": true,
-        "show_credits": true,
-        "show_sign_out": true,
-        "items": [
-          {
-            "title": "Facturation",
-            "url": "/settings/billing",
-            "icon": "CreditCard"
-          },
-          {
-            "title": "Activité",
-            "url": "/activity",
-            "icon": "Activity"
-          }
+      {
+        "id": "resume-parser",
+        "badge": "RH & Recrutement",
+        "h3": "Analyseur de CV IA",
+        "description": "Extrayez automatiquement les informations des candidats via notre analyseur de CV, quel que soit le format (PDF, Word ou image). La sortie structurée inclut le nom, les compétences et l'expérience pour votre ATS.",
+        "keywords": [
+          "analyseur de cv",
+          "resume parser",
+          "extraction de cv",
+          "rh"
         ]
       },
-      "show_sign": true,
-      "show_theme": false,
-      "show_locale": false,
-      "topbanner": {}
-    },
-    "footer": {
-      "id": "footer",
-      "brand": {
-        "title": "xparse",
-        "description": "Solutions de traitement de documents alimentées par l'IA qui convertissent les PDF, images et fichiers bureautiques en Markdown et JSON structuré, prêts pour les LLM.",
-        "logo": {
-          "src": "/logo.png",
-          "alt": "xparse",
-          "width": 1024,
-          "height": 1024
-        },
-        "url": "/"
-      },
-      "nav": {
-        "items": [
-          {
-            "title": "Produit",
-            "children": [
-              {
-                "title": "Espace Test",
-                "url": "/playground",
-                "target": "_self"
-              },
-              {
-                "title": "Tarifs",
-                "url": "/pricing",
-                "target": "_self"
-              }
-            ]
-          }
+      {
+        "id": "bank-statement-parser",
+        "badge": "Finance & Conformité",
+        "h3": "Analyseur de Relevés Bancaires",
+        "description": "Convertissez les relevés bancaires en CSV ou JSON structuré. Extrayez les dates, les montants et repérez même un faux relevé bancaire pour assurer votre conformité financière et lutter contre la fraude.",
+        "keywords": [
+          "analyse de relevé bancaire",
+          "faux relevé bancaire",
+          "bank statement parser"
         ]
       },
-      "show_built_with": false,
-      "show_theme": false,
-      "show_locale": false,
-      "agreement": {
-        "items": [
-          {
-            "title": "Politique de Confidentialité",
-            "url": "/privacy-policy"
-          },
-          {
-            "title": "Conditions d'Utilisation",
-            "url": "/terms-of-service"
-          }
+      {
+        "id": "document-extraction",
+        "badge": "Entreprise",
+        "h3": "Logiciel d'extraction de données",
+        "description": "Faites évoluer l'extraction de documents dans toute votre entreprise. Traitez par lots des milliers de fichiers via l'API de notre logiciel d'extraction de données. Supporte Word, Excel, HTML et plus de 50 formats.",
+        "keywords": [
+          "logiciel d'extraction de données",
+          "document data extraction software",
+          "automatisation pdf"
+        ]
+      },
+      {
+        "id": "handwriting-recognition",
+        "badge": "OCR & Numérisation",
+        "h3": "Convertisseur d'Écriture Manuscrite",
+        "description": "Numérisez des formulaires manuscrits, des notes et des ordonnances avec une grande précision. Notre OCR multi-moteurs gère le contenu mixte (imprimé et manuscrit) sur la même page, en anglais et en multilingue.",
+        "keywords": [
+          "écriture manuscrite en texte",
+          "ocr manuscrit",
+          "reconnaissance d'écriture"
+        ]
+      },
+      {
+        "id": "legal-document-extraction",
+        "badge": "Juridique & Conformité",
+        "h3": "Extraction de Données Juridiques",
+        "description": "Extrayez les clauses clés, les parties, les dates et les obligations des contrats et NDA. Accélérez la révision juridique avec une sortie structurée et lisible par machine, prête pour votre plateforme d'analyse.",
+        "keywords": [
+          "extraction de données juridiques",
+          "analyse de contrats",
+          "analyseur nda"
         ]
       }
+    ]
+  },
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "xparse",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Espace Test",
+          "url": "/playground",
+          "icon": "Code2"
+        },
+        {
+          "title": "Tarifs",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Facturation",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Activité",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true,
+    "topbanner": {}
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "xparse",
+      "description": "Solutions de traitement de documents alimentées par l'IA qui convertissent les PDF, images et fichiers bureautiques en Markdown et JSON structuré, prêts pour les LLM.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "xparse",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Produit",
+          "children": [
+            {
+              "title": "Espace Test",
+              "url": "/playground",
+              "target": "_self"
+            },
+            {
+              "title": "Tarifs",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": false,
+    "show_locale": false,
+    "agreement": {
+      "items": [
+        {
+          "title": "Politique de Confidentialité",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Conditions d'Utilisation",
+          "url": "/terms-of-service"
+        }
+      ]
     }
   }
+}

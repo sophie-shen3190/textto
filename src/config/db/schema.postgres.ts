@@ -544,6 +544,7 @@ export const parseJob = table(
     markdown: text('markdown'), // parsed markdown result
     resultJson: text('result_json'), // full normalised result JSON
     errorMessage: text('error_message'),
+    parseMode: text('parse_mode').notNull().default('standard'), // standard | vlm
     costCredits: integer('cost_credits').notNull().default(0),
     sessionId: text('session_id'),         // anonymous user tracking
     ip: text('ip').notNull().default(''),  // client IP
