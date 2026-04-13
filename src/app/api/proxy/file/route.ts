@@ -31,7 +31,9 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const response = await fetch(target);
+    const response = await fetch(target, {
+      signal: AbortSignal.timeout(30_000), // 30s — TextIn CDN can be slow
+    });
 
     if (!response.ok) {
       return new NextResponse(`Failed to fetch file: ${response.statusText}`, {
@@ -47,7 +49,10 @@ export async function GET(req: NextRequest) {
         'Cache-Control': 'public, max-age=86400, immutable',
       },
     });
-  } catch (error) {
+  } catch (error: any) {
+    if (error?.name === 'TimeoutError' || error?.code === 'UND_ERR_CONNECT_TIMEOUT') {
+      return new NextResponse('Gateway Timeout', { status: 504 });
+    }
     console.error('Proxy error:', error);
     return new NextResponse('Internal Server Error', { status: 500 });
   }

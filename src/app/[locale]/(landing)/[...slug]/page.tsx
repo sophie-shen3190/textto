@@ -63,10 +63,15 @@ export async function generateMetadata({
     typeof slug === 'string' ? slug : (slug as string[]).join('.') || '';
 
   const messageKey = `pages.${dynamicPageSlug}`;
-  const t = await getTranslations({ locale, namespace: messageKey });
+  let t: Awaited<ReturnType<typeof getTranslations>> | null = null;
+  try {
+    t = await getTranslations({ locale, namespace: messageKey });
+  } catch {
+    // namespace not found — fall through to common metadata
+  }
 
   // return dynamic page metadata
-  if (t.has('metadata')) {
+  if (t?.has('metadata')) {
     title = t.raw('metadata.title');
     description = t.raw('metadata.description');
 
