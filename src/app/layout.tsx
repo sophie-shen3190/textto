@@ -1,6 +1,7 @@
 import '@/config/style/global.css';
 
 import { Inter, JetBrains_Mono, Merriweather, Noto_Sans_Mono, Space_Grotesk } from 'next/font/google';
+import Script from 'next/script';
 import { getLocale, setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
@@ -157,6 +158,16 @@ export default async function RootLayout({
         {customerServiceMetaTags}
         {/* inject customer service head scripts */}
         {customerServiceHeadScripts}
+
+        {/* Plausible analytics */}
+        <Script
+          src="https://plausible.io/js/pa-oBCYrnhGwGGWxnTkpUvnG.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">{`
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        `}</Script>
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextTopLoader
