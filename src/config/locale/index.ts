@@ -2,10 +2,21 @@ import { envConfigs } from '..';
 
 export const localeNames: any = {
   en: 'English',
-  // zh: '中文', // temporarily disabled — Chinese locale coming soon
+  // zh: '中文',
+  // ja: '日本語',
+  // ko: '한국어',
+  // de: 'Deutsch',
+  // fr: 'Français',
+  // es: 'Español',
+  // pt: 'Português',
+  // it: 'Italiano',
+  // nl: 'Nederlands',
+  // ru: 'Русский',
+  // ar: 'العربية',
 };
 
-export const locales = ['en']; // 'zh' temporarily disabled
+// Uncomment each locale once its landing.json is translated
+export const locales = ['en'];
 
 export const defaultLocale = envConfigs.locale;
 
