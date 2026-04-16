@@ -17,9 +17,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { useSession } from '@/core/auth/client';
 import { setPendingFile } from '@/shared/lib/pending-file-store';
-import { useAppContext } from '@/shared/contexts/app';
 import { SAMPLE_PARSE_RESULTS } from '@/shared/lib/sample-parse-data';
 
 const FORMATS = [
@@ -268,14 +266,10 @@ function SampleUseCases({ mode, selectedIdx, onSelect, title }: {
   title: string;
 }) {
   const [loading, setLoading] = useState<number | null>(null);
-  const { data: session } = useSession();
-  const isLoggedIn = !!session?.user;
   const router = useRouter();
-  const { setIsShowSignModal } = useAppContext();
 
   const handleOpenInPlayground = async (e: React.MouseEvent, idx: number) => {
     e.stopPropagation();
-    if (!isLoggedIn) { setIsShowSignModal(true); return; }
     const sample = SAMPLE_PARSE_RESULTS[idx];
     setLoading(idx);
     try {
@@ -324,10 +318,7 @@ function UploadZone({ mode, labels }: { mode: 'standard' | 'vlm'; labels: HeroPr
   const [isDragging, setIsDragging] = useState(false);
   const [isUploaded, setIsUploaded] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const { data: session } = useSession();
-  const isLoggedIn = !!session?.user;
   const router = useRouter();
-  const { setIsShowSignModal } = useAppContext();
 
   const goToPlayground = (file: File) => {
     setPendingFile(file, mode);
@@ -340,12 +331,10 @@ function UploadZone({ mode, labels }: { mode: 'standard' | 'vlm'; labels: HeroPr
     setIsDragging(false);
     const file = e.dataTransfer.files[0];
     if (!file) return;
-    if (!isLoggedIn) { setIsShowSignModal(true); return; }
     goToPlayground(file);
   };
 
   const handleClick = () => {
-    if (!isLoggedIn) { setIsShowSignModal(true); return; }
     inputRef.current?.click();
   };
 
@@ -393,14 +382,10 @@ function UploadZone({ mode, labels }: { mode: 'standard' | 'vlm'; labels: HeroPr
 export function HeroSection({ hero }: { hero: HeroProps }) {
   const [parseMode, setParseMode] = useState<'standard' | 'vlm'>('standard');
   const [selectedSampleIdx, setSelectedSampleIdx] = useState(0);
-  const { data: session } = useSession();
-  const isLoggedIn = !!session?.user;
   const router = useRouter();
-  const { setIsShowSignModal } = useAppContext();
 
   const handleStartFree = () => {
-    if (isLoggedIn) router.push('/playground');
-    else setIsShowSignModal(true);
+    router.push('/playground');
   };
 
   const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
