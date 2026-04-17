@@ -160,6 +160,18 @@ export default async function RootLayout({
         {/* inject customer service head scripts */}
         {customerServiceHeadScripts}
 
+        {/* Google Ads */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18094910694"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18094910694');
+        `}</Script>
+
         {/* Plausible analytics */}
         <Script
           src="https://plausible.io/js/pa-oBCYrnhGwGGWxnTkpUvnG.js"
